@@ -7,9 +7,7 @@ public class InputReceiver : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () 
-    {
-
-
+    {        
         _playerController = this.GetComponent<PlayerController>();
 	}
 	

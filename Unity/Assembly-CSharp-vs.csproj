@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraSizeController.cs" />
+     <Compile Include="Assets\Scripts\EggController.cs" />
      <Compile Include="Assets\Scripts\InputReceiver.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
  <Reference Include="UnityEngine.UI">
