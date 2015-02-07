@@ -5,7 +5,6 @@ public class EggController : MonoBehaviour
 {
     public float eggMoveSpeed = 10f;
     public float eggMaxLifespan = 10f;
-    public float heightForce = 10f;
 
     private float _eggLifespan;
     private bool _destroyed;
