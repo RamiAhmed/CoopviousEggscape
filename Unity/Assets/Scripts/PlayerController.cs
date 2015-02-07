@@ -22,8 +22,13 @@ public class PlayerController : MonoBehaviour
     public GameObject eggPrefab;
     public GameObject otherPlayer;
 
+	public AudioClip[] attackSoundsImpact;
+	public AudioClip[] attackSoundsScream;
+	public AudioClip[] attackSoundsMiss;
+
     private PlayerState _playerState = PlayerState.THIN;
 
+	private AudioSource _audioPlayer;
     private Vector3 _velocity;
     private float _lastAttack;
     private Animator _animator;
@@ -56,6 +61,11 @@ public class PlayerController : MonoBehaviour
         {
             Debug.LogError(this.gameObject.name + " is missing its Animator component");
         }
+		_audioPlayer = this.GetComponent<AudioSource>();
+		if (_audioPlayer == null)
+		{
+			Debug.LogError(this.gameObject.name + " is missing its AudioSource component");
+		}
     }
 
     private void Update()
@@ -134,6 +144,7 @@ public class PlayerController : MonoBehaviour
                 // other player within attack cone radius
                 Vector3 eggDirection = (otherPlayerPos - selfPos).normalized;
                 MakeEgg(otherPlayerPos, eggDirection);
+
             }
         }
     }
