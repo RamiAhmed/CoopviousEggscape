@@ -10,6 +10,8 @@ public class CameraSizeController : MonoBehaviour {
 	public float minCameraSize = 7f;
 	public float maxCameraSize = 15f;
 
+	public float extraPlayerZPosition = 1f;
+
     private Camera _camera;
 
 	// Use this for initialization
@@ -37,7 +39,9 @@ public class CameraSizeController : MonoBehaviour {
 	}
 
 	void CenterCamera() {
-		Vector3 position = CalculateMidVector(Player0.transform.position, Player1.transform.position);
+		Vector3 player0Position = new Vector3(Player0.transform.position.x, Player0.transform.position.y, Player0.transform.position.z + extraPlayerZPosition);
+		Vector3 player1Position = new Vector3(Player1.transform.position.x, Player1.transform.position.y, Player1.transform.position.z + extraPlayerZPosition);
+		Vector3 position = CalculateMidVector(player0Position, player1Position);
 
         _camera.transform.position = new Vector3(position.x, _camera.transform.position.y, position.z);
 	}
