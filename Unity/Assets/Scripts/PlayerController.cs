@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 _velocity;
     private float _lastAttack;
+    private Animator _animator;
 
     public Vector3 velocity
     {
@@ -40,6 +41,17 @@ public class PlayerController : MonoBehaviour
             // check for and alert if missing other player reference
             Debug.LogError(this.gameObject.name + " is missing its otherPlayer reference!");
         }
+
+        _animator = this.GetComponent<Animator>();
+        if (_animator == null)
+        {
+            Debug.LogError(this.gameObject.name + " is missing its Animator component");
+        }
+    }
+
+    private void Update()
+    {
+        _animator.SetBool("walking", _velocity.sqrMagnitude > minPlayerSpeed);
     }
 
     private void FixedUpdate()
