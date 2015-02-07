@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour {
     public void Move(float deltaX, float deltaY)
     {
         // add up velocity gradually
-        _velocity += new Vector3(deltaY, deltaX, 0f);
+        _velocity += new Vector3(deltaX, 0f, deltaY);
 
         // make sure velocity stays below max speed
         _velocity = Vector3.ClampMagnitude(_velocity, maxPlayerSpeed);
@@ -75,6 +75,16 @@ public class PlayerController : MonoBehaviour {
 
     public void Rotate(float deltaX, float deltaY)
     {
+        deltaY *= -1f;
+        this.transform.eulerAngles = new Vector3(this.transform.eulerAngles.x, Mathf.Atan2(deltaX, deltaY) * Mathf.Rad2Deg, this.transform.eulerAngles.z);
+
+        //Vector3 targetDirection = new Vector3(deltaX, deltaY, 0f);
+
+        //if (targetDirection.sqrMagnitude != 0f)
+        //{
+        //    Quaternion targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
+        //    this.transform.rotation = targetRotation;
+        //}
         //if (Mathf.Abs(deltaX) > 0f)
         //{
         //    this.transform.Rotate(Vector3.up, deltaX);

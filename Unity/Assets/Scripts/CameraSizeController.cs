@@ -39,7 +39,7 @@ public class CameraSizeController : MonoBehaviour {
 	void CenterCamera() {
 		Vector3 position = CalculateMidVector(Player0.transform.position, Player1.transform.position);
 
-        _camera.transform.position = new Vector3(position.x, position.y, -10);
+        _camera.transform.position = new Vector3(position.x, _camera.transform.position.y, position.z);
 	}
 
 	Vector3 CalculateMidVector(Vector3 first, Vector3 second) {
