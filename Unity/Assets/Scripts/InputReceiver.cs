@@ -30,12 +30,5 @@ public class InputReceiver : MonoBehaviour
         {
             _playerController.Attack();
         }
-
-        float rotateX = Input.GetAxis("Rotate X " + _playerController.playerNumber);
-        float rotateY = Input.GetAxis("Rotate Y " + _playerController.playerNumber);
-        if (Mathf.Abs(rotateX) > 0.2f || Mathf.Abs(rotateY) > 0.2f)
-        {
-            _playerController.Rotate(rotateX, rotateY);
-        }
     }
 }
