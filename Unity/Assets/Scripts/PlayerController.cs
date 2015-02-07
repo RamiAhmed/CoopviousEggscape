@@ -44,10 +44,14 @@ public class PlayerController : MonoBehaviour {
     {
         if (_velocity.sqrMagnitude > 0f)
         {
+            Vector3 selfPos = this.transform.position;
+
             // move forward in velocity direction as long as there is a velocity
             Vector3 speed = _velocity * playerSpeed * Time.fixedDeltaTime;
-            this.transform.position = transform.position + speed;
+            this.transform.position = selfPos + speed;
             _velocity -= speed * dragFactor;
+
+            this.transform.LookAt(selfPos + _velocity);
         }
     }
 
