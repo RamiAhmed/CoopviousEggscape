@@ -36,11 +36,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    private void Update()
-    {
-    }
-
     private void FixedUpdate()
     {
         if (_velocity.sqrMagnitude > minPlayerSpeed)
@@ -59,7 +54,10 @@ public class PlayerController : MonoBehaviour
             this.transform.position = selfPos + speed;
             _velocity -= speed * dragFactor;
 
-            //this.transform.LookAt(selfPos + _velocity);
+            if (this.rigidbody.velocity.sqrMagnitude > minPlayerSpeed)
+            {
+                this.rigidbody.velocity = Vector3.zero;
+            }
             
         }
     }
@@ -104,7 +102,6 @@ public class PlayerController : MonoBehaviour
         if ((otherPlayerPos - selfPos).sqrMagnitude < (playerRadius * playerRadius))
         {
             // other player within radius
-
             if (Vector3.Angle(selfPos, otherPlayerPos) < playerAttackConeInDegrees)
             {
                 // other player within attack cone radius
@@ -125,19 +122,4 @@ public class PlayerController : MonoBehaviour
 
         // TODO: Set other egg properties
     }
-
-    //void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.CompareTag("Door"))
-    //    {
-    //        var portalDoor = other.GetComponent<PortalDoor>();
-    //        if (portalDoor == null)
-    //        {
-    //            Debug.LogError("Player could not enter trigger of: " + other + " as it has no PortalDoor");
-    //            return;
-    //        }
-
-    //        portalDoor.Teleport(this.gameObject);
-    //    }
-    //}
 }
