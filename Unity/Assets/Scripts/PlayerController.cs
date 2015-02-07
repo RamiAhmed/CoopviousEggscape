@@ -18,6 +18,12 @@ public class PlayerController : MonoBehaviour
     private Vector3 _velocity;
     private float _lastAttack;
 
+    public Vector3 velocity
+    {
+        get { return _velocity; }
+        set { _velocity = value; }
+    }
+
     // Use this for initialization
     private void Start()
     {
@@ -38,6 +44,11 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!this.rigidbody.isKinematic)
+        {
+            this.rigidbody.velocity = this.rigidbody.angularVelocity = Vector3.zero;
+        }
+
         if (_velocity.sqrMagnitude > minPlayerSpeed)
         {
             // move forward in velocity direction as long as there is a velocity
@@ -51,14 +62,8 @@ public class PlayerController : MonoBehaviour
                 return;
             }
 
-            this.transform.position = selfPos + speed;
             _velocity -= speed * dragFactor;
-
-            if (this.rigidbody.velocity.sqrMagnitude > minPlayerSpeed)
-            {
-                this.rigidbody.velocity = Vector3.zero;
-            }
-            
+            this.rigidbody.MovePosition(selfPos + speed);
         }
     }
 
