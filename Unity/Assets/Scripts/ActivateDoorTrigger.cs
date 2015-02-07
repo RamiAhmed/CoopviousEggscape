@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class OpenDoorTrigger : EventTrigger
+public class ActivateDoorTrigger : EventTrigger
 {
     private GameObject _door;
 
@@ -27,8 +27,18 @@ public class OpenDoorTrigger : EventTrigger
     {
         if (_door != null)
         {
-            GameObject.Destroy(_door, 0.1f);
+            var portalDoor = _door.GetComponent<PortalDoor>();
+            if (portalDoor == null)
+            {
+                Debug.LogError(this.gameObject.name + " could not find PortalDoor component on " + _door);
+                return;
+            }
+
+            portalDoor.ActiveDoor();
+
+            //GameObject.Destroy(_door, 0.1f);
             GameObject.Destroy(other.gameObject, 0.1f);
+            GameObject.Destroy(this.gameObject, 0.15f);
         }
     }
 

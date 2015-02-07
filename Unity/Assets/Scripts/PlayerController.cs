@@ -60,6 +60,7 @@ public class PlayerController : MonoBehaviour
             _velocity -= speed * dragFactor;
 
             //this.transform.LookAt(selfPos + _velocity);
+            
         }
     }
 
@@ -124,4 +125,19 @@ public class PlayerController : MonoBehaviour
 
         // TODO: Set other egg properties
     }
+
+    //void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.CompareTag("Door"))
+    //    {
+    //        var portalDoor = other.GetComponent<PortalDoor>();
+    //        if (portalDoor == null)
+    //        {
+    //            Debug.LogError("Player could not enter trigger of: " + other + " as it has no PortalDoor");
+    //            return;
+    //        }
+
+    //        portalDoor.Teleport(this.gameObject);
+    //    }
+    //}
 }
