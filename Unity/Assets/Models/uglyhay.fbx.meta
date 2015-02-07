@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c1389aa24c4826844b6a644e252f1053
+guid: 753213ee5c3ecea4a8b2eb8a2a1f702c
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -28,8 +28,8 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 3
-    meshCompression: 1
+    globalScale: .00999999978
+    meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
@@ -60,6 +60,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   additionalBone: 0
   userData: 

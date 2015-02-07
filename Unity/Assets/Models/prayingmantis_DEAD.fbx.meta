@@ -1,17 +1,14 @@
 fileFormatVersion: 2
-guid: 6f050ba6aacc51e478b872bd8344912d
+guid: 0088a044091e1b44dbb5f9eb80aab056
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: HeavyThrownObject_Vase
-    100002: //RootNode
-    400000: HeavyThrownObject_Vase
-    400002: //RootNode
-    2300000: HeavyThrownObject_Vase
-    3300000: HeavyThrownObject_Vase
-    4300000: HeavyThrownObject_Vase
-    6400000: HeavyThrownObject_Vase
-    11100000: //RootNode
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Cube
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -31,9 +28,9 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: .00999999978
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
@@ -63,6 +60,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 1
+  animationType: 2
   additionalBone: 0
   userData: 
