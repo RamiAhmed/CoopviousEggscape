@@ -1,0 +1,1816 @@
+fileFormatVersion: 2
+guid: f7a9b001df5b8524c9d650a65db7ecd6
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: beak_high_bone_01
+    100002: beak_high_bone_02
+    100004: beak_high_end
+    100006: beak_low_bone_01
+    100008: beak_low_bone_02
+    100010: beak_low_end
+    100012: body_mesh1
+    100014: bshp
+    100016: Camera
+    100018: //RootNode
+    100020: chockien_back_up
+    100022: COG
+    100024: COG1
+    100026: cont
+    100028: flexi_spine2:flexi_anim_a01
+    100030: flexi_spine2:flexi_anim_b01
+    100032: flexi_spine2:flexi_anim_c01
+    100034: flexi_spine2:flexi_anim_d01
+    100036: flexi_spine2:flexi_anim_e01
+    100038: flexi_spine2:flexi_anim_endt01
+    100040: flexi_spine2:flexi_anim_mid01
+    100042: flexi_spine2:flexi_anim_start01
+    100044: flexi_spine2:flexi_bind_a01
+    100046: flexi_spine2:flexi_bind_b01
+    100048: flexi_spine2:flexi_bind_c01
+    100050: flexi_spine2:flexi_bind_d01
+    100052: flexi_spine2:flexi_bind_e01
+    100054: flexi_spine2:flexi_cWire_surface01
+    100056: flexi_spine2:flexi_cWire_surface01BaseWire
+    100058: flexi_spine2:flexi_flcs01
+    100060: flexi_spine2:flexi_flcs_a01
+    100062: flexi_spine2:flexi_flcs_b01
+    100064: flexi_spine2:flexi_flcs_c01
+    100066: flexi_spine2:flexi_flcs_d01
+    100068: flexi_spine2:flexi_flcs_e01
+    100070: flexi_spine2:flexi_Global01
+    100072: flexi_spine2:flexi_grp_anim_endt01
+    100074: flexi_spine2:flexi_grp_anim_mid01
+    100076: flexi_spine2:flexi_grp_anim_start01
+    100078: flexi_spine2:flexi_grp_jnt_end01
+    100080: flexi_spine2:flexi_grp_jnt_mid01
+    100082: flexi_spine2:flexi_grp_jnt_start01
+    100084: flexi_spine2:flexi_hidden01
+    100086: flexi_spine2:flexi_jnt_cWrie01
+    100088: flexi_spine2:flexi_Jnt_end01
+    100090: flexi_spine2:flexi_Jnt_mid01
+    100092: flexi_spine2:flexi_Jnt_start
+    100094: flexi_spine2:flexi_spine01
+    100096: flexi_spine2:flexi_twistHdl_surface01
+    100098: flexi_spine3:flexi_anim_a01
+    100100: flexi_spine3:flexi_anim_b01
+    100102: flexi_spine3:flexi_anim_c01
+    100104: flexi_spine3:flexi_anim_d01
+    100106: flexi_spine3:flexi_anim_e01
+    100108: flexi_spine3:flexi_anim_endt01
+    100110: flexi_spine3:flexi_anim_mid01
+    100112: flexi_spine3:flexi_anim_start01
+    100114: flexi_spine3:flexi_bind_a01
+    100116: flexi_spine3:flexi_bind_b01
+    100118: flexi_spine3:flexi_bind_c01
+    100120: flexi_spine3:flexi_bind_d01
+    100122: flexi_spine3:flexi_bind_e01
+    100124: flexi_spine3:flexi_cWire_surface01
+    100126: flexi_spine3:flexi_cWire_surface01BaseWire
+    100128: flexi_spine3:flexi_flcs01
+    100130: flexi_spine3:flexi_flcs_a01
+    100132: flexi_spine3:flexi_flcs_b01
+    100134: flexi_spine3:flexi_flcs_c01
+    100136: flexi_spine3:flexi_flcs_d01
+    100138: flexi_spine3:flexi_flcs_e01
+    100140: flexi_spine3:flexi_Global01
+    100142: flexi_spine3:flexi_grp_anim_endt01
+    100144: flexi_spine3:flexi_grp_anim_mid01
+    100146: flexi_spine3:flexi_grp_anim_start01
+    100148: flexi_spine3:flexi_grp_jnt_end01
+    100150: flexi_spine3:flexi_grp_jnt_mid01
+    100152: flexi_spine3:flexi_grp_jnt_start01
+    100154: flexi_spine3:flexi_hidden01
+    100156: flexi_spine3:flexi_jnt_cWrie01
+    100158: flexi_spine3:flexi_Jnt_end01
+    100160: flexi_spine3:flexi_Jnt_mid01
+    100162: flexi_spine3:flexi_Jnt_start
+    100164: flexi_spine3:flexi_spine01
+    100166: flexi_spine3:flexi_twistHdl_surface01
+    100168: flexi_spine4:flexi_anim_a01
+    100170: flexi_spine4:flexi_anim_b01
+    100172: flexi_spine4:flexi_anim_c01
+    100174: flexi_spine4:flexi_anim_d01
+    100176: flexi_spine4:flexi_anim_e01
+    100178: flexi_spine4:flexi_anim_endt01
+    100180: flexi_spine4:flexi_anim_mid01
+    100182: flexi_spine4:flexi_anim_start01
+    100184: flexi_spine4:flexi_bind_a01
+    100186: flexi_spine4:flexi_bind_b01
+    100188: flexi_spine4:flexi_bind_c01
+    100190: flexi_spine4:flexi_bind_d01
+    100192: flexi_spine4:flexi_bind_e01
+    100194: flexi_spine4:flexi_cWire_surface01
+    100196: flexi_spine4:flexi_cWire_surface01BaseWire
+    100198: flexi_spine4:flexi_flcs01
+    100200: flexi_spine4:flexi_flcs_a01
+    100202: flexi_spine4:flexi_flcs_b01
+    100204: flexi_spine4:flexi_flcs_c01
+    100206: flexi_spine4:flexi_flcs_d01
+    100208: flexi_spine4:flexi_flcs_e01
+    100210: flexi_spine4:flexi_Global01
+    100212: flexi_spine4:flexi_grp_anim_endt01
+    100214: flexi_spine4:flexi_grp_anim_mid01
+    100216: flexi_spine4:flexi_grp_anim_start01
+    100218: flexi_spine4:flexi_grp_jnt_end01
+    100220: flexi_spine4:flexi_grp_jnt_mid01
+    100222: flexi_spine4:flexi_grp_jnt_start01
+    100224: flexi_spine4:flexi_hidden01
+    100226: flexi_spine4:flexi_jnt_cWrie01
+    100228: flexi_spine4:flexi_Jnt_end01
+    100230: flexi_spine4:flexi_Jnt_mid01
+    100232: flexi_spine4:flexi_Jnt_start
+    100234: flexi_spine4:flexi_spine01
+    100236: flexi_spine4:flexi_twistHdl_surface01
+    100238: group1
+    100240: group3
+    100242: group4
+    100244: head_bone
+    100246: head_end
+    100248: ikHandle1
+    100250: ikHandle2
+    100252: joint26
+    100254: joint4
+    100256: joint6
+    100258: joint7
+    100260: kam_bone_01
+    100262: kam_bone_02
+    100264: kam_bone_03
+    100266: Lamp
+    100268: left_eye_Ebone
+    100270: left_eye_end
+    100272: left_eye_mesh
+    100274: left_leg_bone_01
+    100276: left_leg_bone_02
+    100278: left_leg_end
+    100280: left_shulder_bone
+    100282: left_wind_bone_01
+    100284: left_wind_end
+    100286: left_wing_bone_02
+    100288: lf_con_shoulder
+    100290: lf_foot_con
+    100292: look_at
+    100294: mesh_grp
+    100296: plavis_bone
+    100298: pPlane1
+    100300: right_eye_Ebone
+    100302: right_eye_end
+    100304: right_eye_mesh
+    100306: right_leg_bone_01
+    100308: right_leg_bone_02
+    100310: right_leg_end
+    100312: right_shulder_bone
+    100314: right_wind_bone_01
+    100316: right_wind_bone_02
+    100318: right_wind_end
+    100320: root_bone
+    100322: rt_Con_shoulder
+    100324: rt_foot_con
+    100326: skeleton
+    400000: beak_high_bone_01
+    400002: beak_high_bone_02
+    400004: beak_high_end
+    400006: beak_low_bone_01
+    400008: beak_low_bone_02
+    400010: beak_low_end
+    400012: body_mesh1
+    400014: bshp
+    400016: Camera
+    400018: //RootNode
+    400020: chockien_back_up
+    400022: COG
+    400024: COG1
+    400026: cont
+    400028: flexi_spine2:flexi_anim_a01
+    400030: flexi_spine2:flexi_anim_b01
+    400032: flexi_spine2:flexi_anim_c01
+    400034: flexi_spine2:flexi_anim_d01
+    400036: flexi_spine2:flexi_anim_e01
+    400038: flexi_spine2:flexi_anim_endt01
+    400040: flexi_spine2:flexi_anim_mid01
+    400042: flexi_spine2:flexi_anim_start01
+    400044: flexi_spine2:flexi_bind_a01
+    400046: flexi_spine2:flexi_bind_b01
+    400048: flexi_spine2:flexi_bind_c01
+    400050: flexi_spine2:flexi_bind_d01
+    400052: flexi_spine2:flexi_bind_e01
+    400054: flexi_spine2:flexi_cWire_surface01
+    400056: flexi_spine2:flexi_cWire_surface01BaseWire
+    400058: flexi_spine2:flexi_flcs01
+    400060: flexi_spine2:flexi_flcs_a01
+    400062: flexi_spine2:flexi_flcs_b01
+    400064: flexi_spine2:flexi_flcs_c01
+    400066: flexi_spine2:flexi_flcs_d01
+    400068: flexi_spine2:flexi_flcs_e01
+    400070: flexi_spine2:flexi_Global01
+    400072: flexi_spine2:flexi_grp_anim_endt01
+    400074: flexi_spine2:flexi_grp_anim_mid01
+    400076: flexi_spine2:flexi_grp_anim_start01
+    400078: flexi_spine2:flexi_grp_jnt_end01
+    400080: flexi_spine2:flexi_grp_jnt_mid01
+    400082: flexi_spine2:flexi_grp_jnt_start01
+    400084: flexi_spine2:flexi_hidden01
+    400086: flexi_spine2:flexi_jnt_cWrie01
+    400088: flexi_spine2:flexi_Jnt_end01
+    400090: flexi_spine2:flexi_Jnt_mid01
+    400092: flexi_spine2:flexi_Jnt_start
+    400094: flexi_spine2:flexi_spine01
+    400096: flexi_spine2:flexi_twistHdl_surface01
+    400098: flexi_spine3:flexi_anim_a01
+    400100: flexi_spine3:flexi_anim_b01
+    400102: flexi_spine3:flexi_anim_c01
+    400104: flexi_spine3:flexi_anim_d01
+    400106: flexi_spine3:flexi_anim_e01
+    400108: flexi_spine3:flexi_anim_endt01
+    400110: flexi_spine3:flexi_anim_mid01
+    400112: flexi_spine3:flexi_anim_start01
+    400114: flexi_spine3:flexi_bind_a01
+    400116: flexi_spine3:flexi_bind_b01
+    400118: flexi_spine3:flexi_bind_c01
+    400120: flexi_spine3:flexi_bind_d01
+    400122: flexi_spine3:flexi_bind_e01
+    400124: flexi_spine3:flexi_cWire_surface01
+    400126: flexi_spine3:flexi_cWire_surface01BaseWire
+    400128: flexi_spine3:flexi_flcs01
+    400130: flexi_spine3:flexi_flcs_a01
+    400132: flexi_spine3:flexi_flcs_b01
+    400134: flexi_spine3:flexi_flcs_c01
+    400136: flexi_spine3:flexi_flcs_d01
+    400138: flexi_spine3:flexi_flcs_e01
+    400140: flexi_spine3:flexi_Global01
+    400142: flexi_spine3:flexi_grp_anim_endt01
+    400144: flexi_spine3:flexi_grp_anim_mid01
+    400146: flexi_spine3:flexi_grp_anim_start01
+    400148: flexi_spine3:flexi_grp_jnt_end01
+    400150: flexi_spine3:flexi_grp_jnt_mid01
+    400152: flexi_spine3:flexi_grp_jnt_start01
+    400154: flexi_spine3:flexi_hidden01
+    400156: flexi_spine3:flexi_jnt_cWrie01
+    400158: flexi_spine3:flexi_Jnt_end01
+    400160: flexi_spine3:flexi_Jnt_mid01
+    400162: flexi_spine3:flexi_Jnt_start
+    400164: flexi_spine3:flexi_spine01
+    400166: flexi_spine3:flexi_twistHdl_surface01
+    400168: flexi_spine4:flexi_anim_a01
+    400170: flexi_spine4:flexi_anim_b01
+    400172: flexi_spine4:flexi_anim_c01
+    400174: flexi_spine4:flexi_anim_d01
+    400176: flexi_spine4:flexi_anim_e01
+    400178: flexi_spine4:flexi_anim_endt01
+    400180: flexi_spine4:flexi_anim_mid01
+    400182: flexi_spine4:flexi_anim_start01
+    400184: flexi_spine4:flexi_bind_a01
+    400186: flexi_spine4:flexi_bind_b01
+    400188: flexi_spine4:flexi_bind_c01
+    400190: flexi_spine4:flexi_bind_d01
+    400192: flexi_spine4:flexi_bind_e01
+    400194: flexi_spine4:flexi_cWire_surface01
+    400196: flexi_spine4:flexi_cWire_surface01BaseWire
+    400198: flexi_spine4:flexi_flcs01
+    400200: flexi_spine4:flexi_flcs_a01
+    400202: flexi_spine4:flexi_flcs_b01
+    400204: flexi_spine4:flexi_flcs_c01
+    400206: flexi_spine4:flexi_flcs_d01
+    400208: flexi_spine4:flexi_flcs_e01
+    400210: flexi_spine4:flexi_Global01
+    400212: flexi_spine4:flexi_grp_anim_endt01
+    400214: flexi_spine4:flexi_grp_anim_mid01
+    400216: flexi_spine4:flexi_grp_anim_start01
+    400218: flexi_spine4:flexi_grp_jnt_end01
+    400220: flexi_spine4:flexi_grp_jnt_mid01
+    400222: flexi_spine4:flexi_grp_jnt_start01
+    400224: flexi_spine4:flexi_hidden01
+    400226: flexi_spine4:flexi_jnt_cWrie01
+    400228: flexi_spine4:flexi_Jnt_end01
+    400230: flexi_spine4:flexi_Jnt_mid01
+    400232: flexi_spine4:flexi_Jnt_start
+    400234: flexi_spine4:flexi_spine01
+    400236: flexi_spine4:flexi_twistHdl_surface01
+    400238: group1
+    400240: group3
+    400242: group4
+    400244: head_bone
+    400246: head_end
+    400248: ikHandle1
+    400250: ikHandle2
+    400252: joint26
+    400254: joint4
+    400256: joint6
+    400258: joint7
+    400260: kam_bone_01
+    400262: kam_bone_02
+    400264: kam_bone_03
+    400266: Lamp
+    400268: left_eye_Ebone
+    400270: left_eye_end
+    400272: left_eye_mesh
+    400274: left_leg_bone_01
+    400276: left_leg_bone_02
+    400278: left_leg_end
+    400280: left_shulder_bone
+    400282: left_wind_bone_01
+    400284: left_wind_end
+    400286: left_wing_bone_02
+    400288: lf_con_shoulder
+    400290: lf_foot_con
+    400292: look_at
+    400294: mesh_grp
+    400296: plavis_bone
+    400298: pPlane1
+    400300: right_eye_Ebone
+    400302: right_eye_end
+    400304: right_eye_mesh
+    400306: right_leg_bone_01
+    400308: right_leg_bone_02
+    400310: right_leg_end
+    400312: right_shulder_bone
+    400314: right_wind_bone_01
+    400316: right_wind_bone_02
+    400318: right_wind_end
+    400320: root_bone
+    400322: rt_Con_shoulder
+    400324: rt_foot_con
+    400326: skeleton
+    4300000: pPlane1
+    4300002: left_eye_mesh
+    4300004: right_eye_mesh
+    4300006: body_mesh1
+    7400000: Bind pose
+    7400002: Thin walk
+    7400004: Medium walk
+    7400006: Fat walk
+    9500000: //RootNode
+    13700000: body_mesh1
+    13700002: left_eye_mesh
+    13700004: pPlane1
+    13700006: right_eye_mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 1
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Bind pose
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 1.10000002
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: pPlane1
+        weight: 1
+      - path: flexi_spine2:flexi_spine01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_start01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_start01/flexi_spine2:flexi_anim_start01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_mid01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_mid01/flexi_spine2:flexi_anim_mid01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_endt01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_endt01/flexi_spine2:flexi_anim_endt01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_a01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_a01/flexi_spine2:flexi_anim_a01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_a01/flexi_spine2:flexi_anim_a01/flexi_spine2:flexi_bind_a01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_b01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_b01/flexi_spine2:flexi_anim_b01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_b01/flexi_spine2:flexi_anim_b01/flexi_spine2:flexi_bind_b01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_c01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_c01/flexi_spine2:flexi_anim_c01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_c01/flexi_spine2:flexi_anim_c01/flexi_spine2:flexi_bind_c01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_d01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_d01/flexi_spine2:flexi_anim_d01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_d01/flexi_spine2:flexi_anim_d01/flexi_spine2:flexi_bind_d01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_e01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_e01/flexi_spine2:flexi_anim_e01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_e01/flexi_spine2:flexi_anim_e01/flexi_spine2:flexi_bind_e01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_cWire_surface01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_cWire_surface01BaseWire
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_end01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_end01/flexi_spine2:flexi_Jnt_end01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_mid01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_mid01/flexi_spine2:flexi_Jnt_mid01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_start01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_start01/flexi_spine2:flexi_Jnt_start
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_twistHdl_surface01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_start01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_start01/flexi_spine3:flexi_anim_start01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_mid01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_mid01/flexi_spine3:flexi_anim_mid01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_endt01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_endt01/flexi_spine3:flexi_anim_endt01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_a01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_a01/flexi_spine3:flexi_anim_a01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_a01/flexi_spine3:flexi_anim_a01/flexi_spine3:flexi_bind_a01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_b01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_b01/flexi_spine3:flexi_anim_b01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_b01/flexi_spine3:flexi_anim_b01/flexi_spine3:flexi_bind_b01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_c01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_c01/flexi_spine3:flexi_anim_c01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_c01/flexi_spine3:flexi_anim_c01/flexi_spine3:flexi_bind_c01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_d01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_d01/flexi_spine3:flexi_anim_d01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_d01/flexi_spine3:flexi_anim_d01/flexi_spine3:flexi_bind_d01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_e01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_e01/flexi_spine3:flexi_anim_e01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_e01/flexi_spine3:flexi_anim_e01/flexi_spine3:flexi_bind_e01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_cWire_surface01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_cWire_surface01BaseWire
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_end01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_end01/flexi_spine3:flexi_Jnt_end01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_mid01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_mid01/flexi_spine3:flexi_Jnt_mid01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_start01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_start01/flexi_spine3:flexi_Jnt_start
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_twistHdl_surface01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_start01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_start01/flexi_spine4:flexi_anim_start01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_mid01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_mid01/flexi_spine4:flexi_anim_mid01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_endt01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_endt01/flexi_spine4:flexi_anim_endt01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_a01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_a01/flexi_spine4:flexi_anim_a01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_a01/flexi_spine4:flexi_anim_a01/flexi_spine4:flexi_bind_a01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_b01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_b01/flexi_spine4:flexi_anim_b01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_b01/flexi_spine4:flexi_anim_b01/flexi_spine4:flexi_bind_b01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_c01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_c01/flexi_spine4:flexi_anim_c01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_c01/flexi_spine4:flexi_anim_c01/flexi_spine4:flexi_bind_c01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_d01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_d01/flexi_spine4:flexi_anim_d01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_d01/flexi_spine4:flexi_anim_d01/flexi_spine4:flexi_bind_d01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_e01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_e01/flexi_spine4:flexi_anim_e01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_e01/flexi_spine4:flexi_anim_e01/flexi_spine4:flexi_bind_e01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_cWire_surface01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_cWire_surface01BaseWire
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_end01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_end01/flexi_spine4:flexi_Jnt_end01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_mid01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_mid01/flexi_spine4:flexi_Jnt_mid01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_start01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_start01/flexi_spine4:flexi_Jnt_start
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_twistHdl_surface01
+        weight: 1
+      - path: chockien_back_up
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: mesh_grp
+        weight: 1
+      - path: mesh_grp/left_eye_mesh
+        weight: 1
+      - path: mesh_grp/right_eye_mesh
+        weight: 1
+      - path: mesh_grp/body_mesh1
+        weight: 1
+      - path: cont
+        weight: 1
+      - path: cont/ikHandle1
+        weight: 1
+      - path: cont/ikHandle2
+        weight: 1
+      - path: cont/COG
+        weight: 1
+      - path: cont/COG/lf_foot_con
+        weight: 1
+      - path: cont/COG/rt_foot_con
+        weight: 1
+      - path: cont/COG/lf_con_shoulder
+        weight: 1
+      - path: cont/COG/rt_Con_shoulder
+        weight: 1
+      - path: cont/COG/COG1
+        weight: 1
+      - path: cont/look_at
+        weight: 1
+      - path: bshp
+        weight: 1
+      - path: bshp/group4
+        weight: 1
+      - path: bshp/group3
+        weight: 1
+      - path: bshp/group1
+        weight: 1
+      - path: skeleton
+        weight: 1
+      - path: skeleton/head_bone
+        weight: 1
+      - path: skeleton/head_bone/head_end
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_02
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_02/joint4
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_01
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_01/joint6
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_03
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_03/joint7
+        weight: 1
+      - path: skeleton/head_bone/left_eye_Ebone
+        weight: 1
+      - path: skeleton/head_bone/left_eye_Ebone/left_eye_end
+        weight: 1
+      - path: skeleton/head_bone/right_eye_Ebone
+        weight: 1
+      - path: skeleton/head_bone/right_eye_Ebone/right_eye_end
+        weight: 1
+      - path: skeleton/head_bone/beak_high_bone_01
+        weight: 1
+      - path: skeleton/head_bone/beak_high_bone_01/beak_high_bone_02
+        weight: 1
+      - path: skeleton/head_bone/beak_high_bone_01/beak_high_bone_02/beak_high_end
+        weight: 1
+      - path: skeleton/head_bone/beak_low_bone_01
+        weight: 1
+      - path: skeleton/head_bone/beak_low_bone_01/beak_low_bone_02
+        weight: 1
+      - path: skeleton/head_bone/beak_low_bone_01/beak_low_bone_02/beak_low_end
+        weight: 1
+      - path: skeleton/root_bone
+        weight: 1
+      - path: skeleton/root_bone/left_leg_bone_01
+        weight: 1
+      - path: skeleton/root_bone/left_leg_bone_01/left_leg_bone_02
+        weight: 1
+      - path: skeleton/root_bone/left_leg_bone_01/left_leg_bone_02/left_leg_end
+        weight: 1
+      - path: skeleton/root_bone/right_leg_bone_01
+        weight: 1
+      - path: skeleton/root_bone/right_leg_bone_01/right_leg_bone_02
+        weight: 1
+      - path: skeleton/root_bone/right_leg_bone_01/right_leg_bone_02/right_leg_end
+        weight: 1
+      - path: skeleton/root_bone/joint26
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/left_shulder_bone
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/left_shulder_bone/left_wind_bone_01
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/left_shulder_bone/left_wind_bone_01/left_wing_bone_02
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/left_shulder_bone/left_wind_bone_01/left_wing_bone_02/left_wind_end
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/right_shulder_bone
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/right_shulder_bone/right_wind_bone_01
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/right_shulder_bone/right_wind_bone_01/right_wind_bone_02
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/right_shulder_bone/right_wind_bone_01/right_wind_bone_02/right_wind_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Thin walk
+      takeName: Take 001
+      firstFrame: 2
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: pPlane1
+        weight: 1
+      - path: flexi_spine2:flexi_spine01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_start01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_start01/flexi_spine2:flexi_anim_start01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_mid01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_mid01/flexi_spine2:flexi_anim_mid01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_endt01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_endt01/flexi_spine2:flexi_anim_endt01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_a01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_a01/flexi_spine2:flexi_anim_a01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_a01/flexi_spine2:flexi_anim_a01/flexi_spine2:flexi_bind_a01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_b01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_b01/flexi_spine2:flexi_anim_b01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_b01/flexi_spine2:flexi_anim_b01/flexi_spine2:flexi_bind_b01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_c01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_c01/flexi_spine2:flexi_anim_c01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_c01/flexi_spine2:flexi_anim_c01/flexi_spine2:flexi_bind_c01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_d01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_d01/flexi_spine2:flexi_anim_d01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_d01/flexi_spine2:flexi_anim_d01/flexi_spine2:flexi_bind_d01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_e01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_e01/flexi_spine2:flexi_anim_e01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_e01/flexi_spine2:flexi_anim_e01/flexi_spine2:flexi_bind_e01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_cWire_surface01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_cWire_surface01BaseWire
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_end01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_end01/flexi_spine2:flexi_Jnt_end01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_mid01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_mid01/flexi_spine2:flexi_Jnt_mid01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_start01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_start01/flexi_spine2:flexi_Jnt_start
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_twistHdl_surface01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_start01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_start01/flexi_spine3:flexi_anim_start01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_mid01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_mid01/flexi_spine3:flexi_anim_mid01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_endt01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_endt01/flexi_spine3:flexi_anim_endt01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_a01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_a01/flexi_spine3:flexi_anim_a01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_a01/flexi_spine3:flexi_anim_a01/flexi_spine3:flexi_bind_a01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_b01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_b01/flexi_spine3:flexi_anim_b01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_b01/flexi_spine3:flexi_anim_b01/flexi_spine3:flexi_bind_b01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_c01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_c01/flexi_spine3:flexi_anim_c01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_c01/flexi_spine3:flexi_anim_c01/flexi_spine3:flexi_bind_c01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_d01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_d01/flexi_spine3:flexi_anim_d01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_d01/flexi_spine3:flexi_anim_d01/flexi_spine3:flexi_bind_d01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_e01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_e01/flexi_spine3:flexi_anim_e01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_e01/flexi_spine3:flexi_anim_e01/flexi_spine3:flexi_bind_e01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_cWire_surface01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_cWire_surface01BaseWire
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_end01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_end01/flexi_spine3:flexi_Jnt_end01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_mid01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_mid01/flexi_spine3:flexi_Jnt_mid01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_start01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_start01/flexi_spine3:flexi_Jnt_start
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_twistHdl_surface01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_start01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_start01/flexi_spine4:flexi_anim_start01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_mid01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_mid01/flexi_spine4:flexi_anim_mid01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_endt01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_endt01/flexi_spine4:flexi_anim_endt01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_a01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_a01/flexi_spine4:flexi_anim_a01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_a01/flexi_spine4:flexi_anim_a01/flexi_spine4:flexi_bind_a01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_b01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_b01/flexi_spine4:flexi_anim_b01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_b01/flexi_spine4:flexi_anim_b01/flexi_spine4:flexi_bind_b01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_c01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_c01/flexi_spine4:flexi_anim_c01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_c01/flexi_spine4:flexi_anim_c01/flexi_spine4:flexi_bind_c01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_d01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_d01/flexi_spine4:flexi_anim_d01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_d01/flexi_spine4:flexi_anim_d01/flexi_spine4:flexi_bind_d01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_e01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_e01/flexi_spine4:flexi_anim_e01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_e01/flexi_spine4:flexi_anim_e01/flexi_spine4:flexi_bind_e01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_cWire_surface01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_cWire_surface01BaseWire
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_end01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_end01/flexi_spine4:flexi_Jnt_end01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_mid01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_mid01/flexi_spine4:flexi_Jnt_mid01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_start01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_start01/flexi_spine4:flexi_Jnt_start
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_twistHdl_surface01
+        weight: 1
+      - path: chockien_back_up
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: mesh_grp
+        weight: 1
+      - path: mesh_grp/left_eye_mesh
+        weight: 1
+      - path: mesh_grp/right_eye_mesh
+        weight: 1
+      - path: mesh_grp/body_mesh1
+        weight: 1
+      - path: cont
+        weight: 1
+      - path: cont/ikHandle1
+        weight: 1
+      - path: cont/ikHandle2
+        weight: 1
+      - path: cont/COG
+        weight: 1
+      - path: cont/COG/lf_foot_con
+        weight: 1
+      - path: cont/COG/rt_foot_con
+        weight: 1
+      - path: cont/COG/lf_con_shoulder
+        weight: 1
+      - path: cont/COG/rt_Con_shoulder
+        weight: 1
+      - path: cont/COG/COG1
+        weight: 1
+      - path: cont/look_at
+        weight: 1
+      - path: bshp
+        weight: 1
+      - path: bshp/group4
+        weight: 1
+      - path: bshp/group3
+        weight: 1
+      - path: bshp/group1
+        weight: 1
+      - path: skeleton
+        weight: 1
+      - path: skeleton/head_bone
+        weight: 1
+      - path: skeleton/head_bone/head_end
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_02
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_02/joint4
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_01
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_01/joint6
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_03
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_03/joint7
+        weight: 1
+      - path: skeleton/head_bone/left_eye_Ebone
+        weight: 1
+      - path: skeleton/head_bone/left_eye_Ebone/left_eye_end
+        weight: 1
+      - path: skeleton/head_bone/right_eye_Ebone
+        weight: 1
+      - path: skeleton/head_bone/right_eye_Ebone/right_eye_end
+        weight: 1
+      - path: skeleton/head_bone/beak_high_bone_01
+        weight: 1
+      - path: skeleton/head_bone/beak_high_bone_01/beak_high_bone_02
+        weight: 1
+      - path: skeleton/head_bone/beak_high_bone_01/beak_high_bone_02/beak_high_end
+        weight: 1
+      - path: skeleton/head_bone/beak_low_bone_01
+        weight: 1
+      - path: skeleton/head_bone/beak_low_bone_01/beak_low_bone_02
+        weight: 1
+      - path: skeleton/head_bone/beak_low_bone_01/beak_low_bone_02/beak_low_end
+        weight: 1
+      - path: skeleton/root_bone
+        weight: 1
+      - path: skeleton/root_bone/left_leg_bone_01
+        weight: 1
+      - path: skeleton/root_bone/left_leg_bone_01/left_leg_bone_02
+        weight: 1
+      - path: skeleton/root_bone/left_leg_bone_01/left_leg_bone_02/left_leg_end
+        weight: 1
+      - path: skeleton/root_bone/right_leg_bone_01
+        weight: 1
+      - path: skeleton/root_bone/right_leg_bone_01/right_leg_bone_02
+        weight: 1
+      - path: skeleton/root_bone/right_leg_bone_01/right_leg_bone_02/right_leg_end
+        weight: 1
+      - path: skeleton/root_bone/joint26
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/left_shulder_bone
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/left_shulder_bone/left_wind_bone_01
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/left_shulder_bone/left_wind_bone_01/left_wing_bone_02
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/left_shulder_bone/left_wind_bone_01/left_wing_bone_02/left_wind_end
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/right_shulder_bone
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/right_shulder_bone/right_wind_bone_01
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/right_shulder_bone/right_wind_bone_01/right_wind_bone_02
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/right_shulder_bone/right_wind_bone_01/right_wind_bone_02/right_wind_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Medium walk
+      takeName: Take 001
+      firstFrame: 25
+      lastFrame: 47
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: pPlane1
+        weight: 1
+      - path: flexi_spine2:flexi_spine01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_start01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_start01/flexi_spine2:flexi_anim_start01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_mid01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_mid01/flexi_spine2:flexi_anim_mid01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_endt01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_endt01/flexi_spine2:flexi_anim_endt01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_a01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_a01/flexi_spine2:flexi_anim_a01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_a01/flexi_spine2:flexi_anim_a01/flexi_spine2:flexi_bind_a01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_b01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_b01/flexi_spine2:flexi_anim_b01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_b01/flexi_spine2:flexi_anim_b01/flexi_spine2:flexi_bind_b01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_c01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_c01/flexi_spine2:flexi_anim_c01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_c01/flexi_spine2:flexi_anim_c01/flexi_spine2:flexi_bind_c01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_d01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_d01/flexi_spine2:flexi_anim_d01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_d01/flexi_spine2:flexi_anim_d01/flexi_spine2:flexi_bind_d01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_e01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_e01/flexi_spine2:flexi_anim_e01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_e01/flexi_spine2:flexi_anim_e01/flexi_spine2:flexi_bind_e01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_cWire_surface01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_cWire_surface01BaseWire
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_end01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_end01/flexi_spine2:flexi_Jnt_end01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_mid01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_mid01/flexi_spine2:flexi_Jnt_mid01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_start01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_start01/flexi_spine2:flexi_Jnt_start
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_twistHdl_surface01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_start01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_start01/flexi_spine3:flexi_anim_start01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_mid01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_mid01/flexi_spine3:flexi_anim_mid01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_endt01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_endt01/flexi_spine3:flexi_anim_endt01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_a01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_a01/flexi_spine3:flexi_anim_a01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_a01/flexi_spine3:flexi_anim_a01/flexi_spine3:flexi_bind_a01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_b01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_b01/flexi_spine3:flexi_anim_b01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_b01/flexi_spine3:flexi_anim_b01/flexi_spine3:flexi_bind_b01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_c01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_c01/flexi_spine3:flexi_anim_c01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_c01/flexi_spine3:flexi_anim_c01/flexi_spine3:flexi_bind_c01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_d01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_d01/flexi_spine3:flexi_anim_d01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_d01/flexi_spine3:flexi_anim_d01/flexi_spine3:flexi_bind_d01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_e01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_e01/flexi_spine3:flexi_anim_e01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_e01/flexi_spine3:flexi_anim_e01/flexi_spine3:flexi_bind_e01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_cWire_surface01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_cWire_surface01BaseWire
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_end01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_end01/flexi_spine3:flexi_Jnt_end01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_mid01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_mid01/flexi_spine3:flexi_Jnt_mid01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_start01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_start01/flexi_spine3:flexi_Jnt_start
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_twistHdl_surface01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_start01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_start01/flexi_spine4:flexi_anim_start01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_mid01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_mid01/flexi_spine4:flexi_anim_mid01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_endt01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_endt01/flexi_spine4:flexi_anim_endt01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_a01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_a01/flexi_spine4:flexi_anim_a01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_a01/flexi_spine4:flexi_anim_a01/flexi_spine4:flexi_bind_a01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_b01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_b01/flexi_spine4:flexi_anim_b01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_b01/flexi_spine4:flexi_anim_b01/flexi_spine4:flexi_bind_b01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_c01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_c01/flexi_spine4:flexi_anim_c01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_c01/flexi_spine4:flexi_anim_c01/flexi_spine4:flexi_bind_c01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_d01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_d01/flexi_spine4:flexi_anim_d01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_d01/flexi_spine4:flexi_anim_d01/flexi_spine4:flexi_bind_d01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_e01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_e01/flexi_spine4:flexi_anim_e01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_e01/flexi_spine4:flexi_anim_e01/flexi_spine4:flexi_bind_e01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_cWire_surface01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_cWire_surface01BaseWire
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_end01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_end01/flexi_spine4:flexi_Jnt_end01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_mid01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_mid01/flexi_spine4:flexi_Jnt_mid01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_start01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_start01/flexi_spine4:flexi_Jnt_start
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_twistHdl_surface01
+        weight: 1
+      - path: chockien_back_up
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: mesh_grp
+        weight: 1
+      - path: mesh_grp/left_eye_mesh
+        weight: 1
+      - path: mesh_grp/right_eye_mesh
+        weight: 1
+      - path: mesh_grp/body_mesh1
+        weight: 1
+      - path: cont
+        weight: 1
+      - path: cont/ikHandle1
+        weight: 1
+      - path: cont/ikHandle2
+        weight: 1
+      - path: cont/COG
+        weight: 1
+      - path: cont/COG/lf_foot_con
+        weight: 1
+      - path: cont/COG/rt_foot_con
+        weight: 1
+      - path: cont/COG/lf_con_shoulder
+        weight: 1
+      - path: cont/COG/rt_Con_shoulder
+        weight: 1
+      - path: cont/COG/COG1
+        weight: 1
+      - path: cont/look_at
+        weight: 1
+      - path: bshp
+        weight: 1
+      - path: bshp/group4
+        weight: 1
+      - path: bshp/group3
+        weight: 1
+      - path: bshp/group1
+        weight: 1
+      - path: skeleton
+        weight: 1
+      - path: skeleton/head_bone
+        weight: 1
+      - path: skeleton/head_bone/head_end
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_02
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_02/joint4
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_01
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_01/joint6
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_03
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_03/joint7
+        weight: 1
+      - path: skeleton/head_bone/left_eye_Ebone
+        weight: 1
+      - path: skeleton/head_bone/left_eye_Ebone/left_eye_end
+        weight: 1
+      - path: skeleton/head_bone/right_eye_Ebone
+        weight: 1
+      - path: skeleton/head_bone/right_eye_Ebone/right_eye_end
+        weight: 1
+      - path: skeleton/head_bone/beak_high_bone_01
+        weight: 1
+      - path: skeleton/head_bone/beak_high_bone_01/beak_high_bone_02
+        weight: 1
+      - path: skeleton/head_bone/beak_high_bone_01/beak_high_bone_02/beak_high_end
+        weight: 1
+      - path: skeleton/head_bone/beak_low_bone_01
+        weight: 1
+      - path: skeleton/head_bone/beak_low_bone_01/beak_low_bone_02
+        weight: 1
+      - path: skeleton/head_bone/beak_low_bone_01/beak_low_bone_02/beak_low_end
+        weight: 1
+      - path: skeleton/root_bone
+        weight: 1
+      - path: skeleton/root_bone/left_leg_bone_01
+        weight: 1
+      - path: skeleton/root_bone/left_leg_bone_01/left_leg_bone_02
+        weight: 1
+      - path: skeleton/root_bone/left_leg_bone_01/left_leg_bone_02/left_leg_end
+        weight: 1
+      - path: skeleton/root_bone/right_leg_bone_01
+        weight: 1
+      - path: skeleton/root_bone/right_leg_bone_01/right_leg_bone_02
+        weight: 1
+      - path: skeleton/root_bone/right_leg_bone_01/right_leg_bone_02/right_leg_end
+        weight: 1
+      - path: skeleton/root_bone/joint26
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/left_shulder_bone
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/left_shulder_bone/left_wind_bone_01
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/left_shulder_bone/left_wind_bone_01/left_wing_bone_02
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/left_shulder_bone/left_wind_bone_01/left_wing_bone_02/left_wind_end
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/right_shulder_bone
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/right_shulder_bone/right_wind_bone_01
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/right_shulder_bone/right_wind_bone_01/right_wind_bone_02
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/right_shulder_bone/right_wind_bone_01/right_wind_bone_02/right_wind_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Fat walk
+      takeName: Take 001
+      firstFrame: 48
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: pPlane1
+        weight: 1
+      - path: flexi_spine2:flexi_spine01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_start01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_start01/flexi_spine2:flexi_anim_start01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_mid01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_mid01/flexi_spine2:flexi_anim_mid01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_endt01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_endt01/flexi_spine2:flexi_anim_endt01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_a01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_a01/flexi_spine2:flexi_anim_a01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_a01/flexi_spine2:flexi_anim_a01/flexi_spine2:flexi_bind_a01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_b01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_b01/flexi_spine2:flexi_anim_b01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_b01/flexi_spine2:flexi_anim_b01/flexi_spine2:flexi_bind_b01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_c01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_c01/flexi_spine2:flexi_anim_c01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_c01/flexi_spine2:flexi_anim_c01/flexi_spine2:flexi_bind_c01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_d01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_d01/flexi_spine2:flexi_anim_d01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_d01/flexi_spine2:flexi_anim_d01/flexi_spine2:flexi_bind_d01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_e01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_e01/flexi_spine2:flexi_anim_e01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_e01/flexi_spine2:flexi_anim_e01/flexi_spine2:flexi_bind_e01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_cWire_surface01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_cWire_surface01BaseWire
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_end01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_end01/flexi_spine2:flexi_Jnt_end01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_mid01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_mid01/flexi_spine2:flexi_Jnt_mid01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_start01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_jnt_cWrie01/flexi_spine2:flexi_grp_jnt_start01/flexi_spine2:flexi_Jnt_start
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_twistHdl_surface01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_start01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_start01/flexi_spine3:flexi_anim_start01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_mid01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_mid01/flexi_spine3:flexi_anim_mid01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_endt01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_endt01/flexi_spine3:flexi_anim_endt01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_a01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_a01/flexi_spine3:flexi_anim_a01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_a01/flexi_spine3:flexi_anim_a01/flexi_spine3:flexi_bind_a01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_b01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_b01/flexi_spine3:flexi_anim_b01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_b01/flexi_spine3:flexi_anim_b01/flexi_spine3:flexi_bind_b01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_c01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_c01/flexi_spine3:flexi_anim_c01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_c01/flexi_spine3:flexi_anim_c01/flexi_spine3:flexi_bind_c01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_d01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_d01/flexi_spine3:flexi_anim_d01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_d01/flexi_spine3:flexi_anim_d01/flexi_spine3:flexi_bind_d01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_e01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_e01/flexi_spine3:flexi_anim_e01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_e01/flexi_spine3:flexi_anim_e01/flexi_spine3:flexi_bind_e01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_cWire_surface01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_cWire_surface01BaseWire
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_end01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_end01/flexi_spine3:flexi_Jnt_end01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_mid01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_mid01/flexi_spine3:flexi_Jnt_mid01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_start01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_jnt_cWrie01/flexi_spine3:flexi_grp_jnt_start01/flexi_spine3:flexi_Jnt_start
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_twistHdl_surface01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_start01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_start01/flexi_spine4:flexi_anim_start01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_mid01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_mid01/flexi_spine4:flexi_anim_mid01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_endt01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_endt01/flexi_spine4:flexi_anim_endt01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_a01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_a01/flexi_spine4:flexi_anim_a01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_a01/flexi_spine4:flexi_anim_a01/flexi_spine4:flexi_bind_a01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_b01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_b01/flexi_spine4:flexi_anim_b01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_b01/flexi_spine4:flexi_anim_b01/flexi_spine4:flexi_bind_b01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_c01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_c01/flexi_spine4:flexi_anim_c01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_c01/flexi_spine4:flexi_anim_c01/flexi_spine4:flexi_bind_c01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_d01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_d01/flexi_spine4:flexi_anim_d01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_d01/flexi_spine4:flexi_anim_d01/flexi_spine4:flexi_bind_d01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_e01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_e01/flexi_spine4:flexi_anim_e01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_e01/flexi_spine4:flexi_anim_e01/flexi_spine4:flexi_bind_e01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_cWire_surface01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_cWire_surface01BaseWire
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_end01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_end01/flexi_spine4:flexi_Jnt_end01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_mid01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_mid01/flexi_spine4:flexi_Jnt_mid01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_start01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_jnt_cWrie01/flexi_spine4:flexi_grp_jnt_start01/flexi_spine4:flexi_Jnt_start
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_twistHdl_surface01
+        weight: 1
+      - path: chockien_back_up
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: mesh_grp
+        weight: 1
+      - path: mesh_grp/left_eye_mesh
+        weight: 1
+      - path: mesh_grp/right_eye_mesh
+        weight: 1
+      - path: mesh_grp/body_mesh1
+        weight: 1
+      - path: cont
+        weight: 1
+      - path: cont/ikHandle1
+        weight: 1
+      - path: cont/ikHandle2
+        weight: 1
+      - path: cont/COG
+        weight: 1
+      - path: cont/COG/lf_foot_con
+        weight: 1
+      - path: cont/COG/rt_foot_con
+        weight: 1
+      - path: cont/COG/lf_con_shoulder
+        weight: 1
+      - path: cont/COG/rt_Con_shoulder
+        weight: 1
+      - path: cont/COG/COG1
+        weight: 1
+      - path: cont/look_at
+        weight: 1
+      - path: bshp
+        weight: 1
+      - path: bshp/group4
+        weight: 1
+      - path: bshp/group3
+        weight: 1
+      - path: bshp/group1
+        weight: 1
+      - path: skeleton
+        weight: 1
+      - path: skeleton/head_bone
+        weight: 1
+      - path: skeleton/head_bone/head_end
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_02
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_02/joint4
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_01
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_01/joint6
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_03
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_03/joint7
+        weight: 1
+      - path: skeleton/head_bone/left_eye_Ebone
+        weight: 1
+      - path: skeleton/head_bone/left_eye_Ebone/left_eye_end
+        weight: 1
+      - path: skeleton/head_bone/right_eye_Ebone
+        weight: 1
+      - path: skeleton/head_bone/right_eye_Ebone/right_eye_end
+        weight: 1
+      - path: skeleton/head_bone/beak_high_bone_01
+        weight: 1
+      - path: skeleton/head_bone/beak_high_bone_01/beak_high_bone_02
+        weight: 1
+      - path: skeleton/head_bone/beak_high_bone_01/beak_high_bone_02/beak_high_end
+        weight: 1
+      - path: skeleton/head_bone/beak_low_bone_01
+        weight: 1
+      - path: skeleton/head_bone/beak_low_bone_01/beak_low_bone_02
+        weight: 1
+      - path: skeleton/head_bone/beak_low_bone_01/beak_low_bone_02/beak_low_end
+        weight: 1
+      - path: skeleton/root_bone
+        weight: 1
+      - path: skeleton/root_bone/left_leg_bone_01
+        weight: 1
+      - path: skeleton/root_bone/left_leg_bone_01/left_leg_bone_02
+        weight: 1
+      - path: skeleton/root_bone/left_leg_bone_01/left_leg_bone_02/left_leg_end
+        weight: 1
+      - path: skeleton/root_bone/right_leg_bone_01
+        weight: 1
+      - path: skeleton/root_bone/right_leg_bone_01/right_leg_bone_02
+        weight: 1
+      - path: skeleton/root_bone/right_leg_bone_01/right_leg_bone_02/right_leg_end
+        weight: 1
+      - path: skeleton/root_bone/joint26
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/left_shulder_bone
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/left_shulder_bone/left_wind_bone_01
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/left_shulder_bone/left_wind_bone_01/left_wing_bone_02
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/left_shulder_bone/left_wind_bone_01/left_wing_bone_02/left_wind_end
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/right_shulder_bone
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/right_shulder_bone/right_wind_bone_01
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/right_shulder_bone/right_wind_bone_01/right_wind_bone_02
+        weight: 1
+      - path: skeleton/root_bone/joint26/plavis_bone/right_shulder_bone/right_wind_bone_01/right_wind_bone_02/right_wind_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: root_bone
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
