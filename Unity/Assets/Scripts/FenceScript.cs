@@ -18,7 +18,7 @@ public class FenceScript : MonoBehaviour {
 		{
 			collision.gameObject.GetComponent<EggController>().Explode();
 			rigidbody.isKinematic = false;
-			Destroy(gameObject, 1f);
+			Destroy(gameObject, 3f);
 		}
 	}
 
