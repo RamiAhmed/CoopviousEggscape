@@ -85,7 +85,7 @@ public class PlayerController : MonoBehaviour {
             {
                 // other player within attack cone radius 
                 Vector3 eggDirection = (otherPlayerPos - selfPos).normalized;
-                MakeEgg(selfPos, eggDirection);
+                MakeEgg(otherPlayerPos, eggDirection);
             }
         }
     }
