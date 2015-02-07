@@ -1,24 +1,20 @@
 fileFormatVersion: 2
-guid: bbea4f3092cdc2044967246686706bdd
+guid: f498b0d4f98b4ed49a2afbeecc0220ac
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: body_mesh1
-    100002: Camera
-    100004: chicken
-    100006: face
-    100008: //RootNode
-    100010: Lamp
-    100012: left_eye_mesh
-    100014: right_eye_mesh
+    100002: chicken
+    100004: face
+    100006: //RootNode
+    100008: left_eye_mesh
+    100010: right_eye_mesh
     400000: body_mesh1
-    400002: Camera
-    400004: chicken
-    400006: face
-    400008: //RootNode
-    400010: Lamp
-    400012: left_eye_mesh
-    400014: right_eye_mesh
+    400002: chicken
+    400004: face
+    400006: //RootNode
+    400008: left_eye_mesh
+    400010: right_eye_mesh
     2300000: body_mesh1
     2300002: left_eye_mesh
     2300004: right_eye_mesh
