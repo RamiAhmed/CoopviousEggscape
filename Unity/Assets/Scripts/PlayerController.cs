@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour {
 
     public float maxPlayerSpeed = 20f;
     public float minPlayerSpeed = 1f;
-    public float playerAcceleration = 10f; 
+    public float playerAcceleration = 2f; 
     public int playerNumber = 1;
     public float dragFactor = 2f;
     public float playerRadius = 2f;
