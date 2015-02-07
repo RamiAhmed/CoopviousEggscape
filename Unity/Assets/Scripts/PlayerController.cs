@@ -11,6 +11,7 @@ public class PlayerController : SoundPlayerBase
     public float playerAttackConeInDegrees = 45;
     public int maxAttacksPerSecond = 2;
     public float cameraEdgeFactor = 10f;
+    public float disabledControlsTimeOnAttack = 0.5f;
 
     public GameObject eggPrefab;
     public GameObject otherPlayer;
@@ -22,6 +23,14 @@ public class PlayerController : SoundPlayerBase
     private Vector3 _velocity;
     private float _lastAttack;
     private Animator _animator;
+
+    private float _lastDisabledControls;
+
+    public bool disabledControls
+    {
+        get;
+        set;
+    }
 
     public Vector3 velocity
     {
@@ -58,6 +67,12 @@ public class PlayerController : SoundPlayerBase
     private void Update()
     {
         _animator.SetBool("walking", _velocity.sqrMagnitude > minPlayerSpeed);
+
+        float currentTime = Time.time;
+        if (currentTime - _lastDisabledControls > disabledControlsTimeOnAttack)
+        {
+            disabledControls = false;
+        }
     }
 
     private void FixedUpdate()
@@ -88,6 +103,11 @@ public class PlayerController : SoundPlayerBase
 
     public void Move(float deltaX, float deltaY)
     {
+        if (disabledControls)
+        {
+            return;
+        }
+
         // add up velocity gradually
         _velocity += new Vector3(deltaX, 0f, deltaY);
 
@@ -116,7 +136,9 @@ public class PlayerController : SoundPlayerBase
         {
             // other player within attack cone radius
             Vector3 eggDirection = (otherPlayerPos - selfPos).normalized;
-            MakeEgg(otherPlayerPos, eggDirection);
+
+            var otherPlayerController = otherPlayer.GetComponent<PlayerController>();
+            otherPlayerController.MakeEgg(otherPlayerPos, eggDirection);
             PlayRandomSound(attackSoundsImpact);
         }
         else
@@ -125,7 +147,7 @@ public class PlayerController : SoundPlayerBase
         }
     }
 
-    private void MakeEgg(Vector3 position, Vector3 direction)
+    public void MakeEgg(Vector3 position, Vector3 direction)
     {
         PlayRandomSound(attackSoundsScream);
 
@@ -135,7 +157,12 @@ public class PlayerController : SoundPlayerBase
         // set egg move direction
         var eggController = newEgg.GetComponent<EggController>();
         eggController.direction = direction;
-        
+
+        this.transform.LookAt(otherPlayer.transform.position);
+        _velocity = Vector3.zero;
+        disabledControls = true;
+        _lastDisabledControls = Time.time;
+
         // TODO: Set other egg properties
     }
 }
