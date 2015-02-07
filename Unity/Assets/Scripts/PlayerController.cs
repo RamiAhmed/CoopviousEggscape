@@ -1,14 +1,7 @@
 ﻿using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : SoundPlayerBase
 {
-    public enum PlayerState
-    {
-        THIN = 0,
-        MEDIUM,
-        FAT
-    }
-
     public float maxPlayerSpeed = 20f;
     public float minPlayerSpeed = 1f;
     public float playerAcceleration = 2f;
@@ -18,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float playerAttackConeInDegrees = 45;
     public int maxAttacksPerSecond = 2;
     public float cameraEdgeFactor = 10f;
+    public float disabledControlsTimeOnAttack = 0.5f;
 
     public GameObject eggPrefab;
     public GameObject otherPlayer;
@@ -26,12 +20,17 @@ public class PlayerController : MonoBehaviour
 	public AudioClip[] attackSoundsScream;
 	public AudioClip[] attackSoundsMiss;
 
-    private PlayerState _playerState = PlayerState.THIN;
-
-	private AudioSource _audioPlayer;
     private Vector3 _velocity;
     private float _lastAttack;
     private Animator _animator;
+
+    private float _lastDisabledControls;
+
+    public bool disabledControls
+    {
+        get;
+        set;
+    }
 
     public Vector3 velocity
     {
@@ -40,8 +39,10 @@ public class PlayerController : MonoBehaviour
     }
 
     // Use this for initialization
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
+
         Debug.Log("Player " + playerNumber + " ready!");
 
         if (eggPrefab == null)
@@ -61,17 +62,17 @@ public class PlayerController : MonoBehaviour
         {
             Debug.LogError(this.gameObject.name + " is missing its Animator component");
         }
-
-		_audioPlayer = this.GetComponent<AudioSource>();
-		if (_audioPlayer == null)
-		{
-			Debug.LogError(this.gameObject.name + " is missing its AudioSource component");
-		}
     }
 
     private void Update()
     {
         _animator.SetBool("walking", _velocity.sqrMagnitude > minPlayerSpeed);
+
+        float currentTime = Time.time;
+        if (currentTime - _lastDisabledControls > disabledControlsTimeOnAttack)
+        {
+            disabledControls = false;
+        }
     }
 
     private void FixedUpdate()
@@ -102,22 +103,16 @@ public class PlayerController : MonoBehaviour
 
     public void Move(float deltaX, float deltaY)
     {
+        if (disabledControls)
+        {
+            return;
+        }
+
         // add up velocity gradually
         _velocity += new Vector3(deltaX, 0f, deltaY);
 
         // make sure velocity stays below max speed
         _velocity = Vector3.ClampMagnitude(_velocity, maxPlayerSpeed);
-    }
-
-    public void Rotate(float deltaX, float deltaY)
-    {
-//        // need to invert the Y
-//        deltaY *= -1f;
-//
-//        // rotate smoothly
-//        Vector3 rot = new Vector3(0f, Mathf.Atan2(deltaX, deltaY) * Mathf.Rad2Deg, 0f);
-//        var qr = Quaternion.Euler(rot);
-//        this.transform.rotation = Quaternion.Lerp(transform.rotation, qr, Time.deltaTime * 5f);
     }
 
     public void Attack()
@@ -139,19 +134,23 @@ public class PlayerController : MonoBehaviour
 
         if ((otherPlayerPos - selfPos).sqrMagnitude < (playerRadius * playerRadius))
         {
-            // other player within radius
-            if (Vector3.Angle(selfPos, otherPlayerPos) < playerAttackConeInDegrees)
-            {
-                // other player within attack cone radius
-                Vector3 eggDirection = (otherPlayerPos - selfPos).normalized;
-                MakeEgg(otherPlayerPos, eggDirection);
+            // other player within attack cone radius
+            Vector3 eggDirection = (otherPlayerPos - selfPos).normalized;
 
-            }
+            var otherPlayerController = otherPlayer.GetComponent<PlayerController>();
+            otherPlayerController.MakeEgg(otherPlayerPos, eggDirection);
+            PlayRandomSound(attackSoundsImpact);
+        }
+        else
+        {
+            PlayRandomSound(attackSoundsMiss);
         }
     }
 
-    private void MakeEgg(Vector3 position, Vector3 direction)
+    public void MakeEgg(Vector3 position, Vector3 direction)
     {
+        PlayRandomSound(attackSoundsScream);
+
         // create new egg
         var newEgg = Instantiate(eggPrefab, position, this.transform.rotation) as GameObject;
 
@@ -159,17 +158,11 @@ public class PlayerController : MonoBehaviour
         var eggController = newEgg.GetComponent<EggController>();
         eggController.direction = direction;
 
+        this.transform.LookAt(otherPlayer.transform.position);
+        _velocity = Vector3.zero;
+        disabledControls = true;
+        _lastDisabledControls = Time.time;
+
         // TODO: Set other egg properties
     }
-
-	private void PlayRandomSound(AudioClip[] audioClips)
-	{
-		int length = audioClips.Length;
-		int random = Random.Range(0, length);
-		var audioClip = audioClips[random];
-		if (audioClip == null)
-		{
-			Debug.LogError(this.gameObject.name + " could not find the audioclip specified in: " + audioClips);
-		}
-	}
 }
