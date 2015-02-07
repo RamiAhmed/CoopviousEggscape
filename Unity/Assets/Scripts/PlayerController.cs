@@ -66,7 +66,7 @@ public class PlayerController : SoundPlayerBase
 
     private void Update()
     {
-        _animator.SetBool("walking", _velocity.sqrMagnitude > minPlayerSpeed);
+        _animator.SetBool("Walking", _velocity.sqrMagnitude > minPlayerSpeed);
 
         float currentTime = Time.time;
         if (currentTime - _lastDisabledControls > disabledControlsTimeOnAttack)
@@ -162,6 +162,8 @@ public class PlayerController : SoundPlayerBase
         _velocity = Vector3.zero;
         disabledControls = true;
         _lastDisabledControls = Time.time;
+
+        _animator.SetTrigger("Hit");
 
         // TODO: Set other egg properties
     }

@@ -28,6 +28,12 @@ public abstract class SoundPlayerBase : MonoBehaviour
 
     protected virtual void PlayRandomSound(AudioSource player, AudioClip[] audioClips, bool playOneShot=false)
     {
+        if (player == null)
+        {
+            Debug.LogError(this.gameObject.name + " could not PlayRandomSound, as the AudioSource is null");
+            return;
+        }
+
         if (player.isPlaying)
         {
             return;

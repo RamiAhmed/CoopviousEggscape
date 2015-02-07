@@ -1,11 +1,12 @@
 fileFormatVersion: 2
-guid: fa0a4ad7bddf744c888cd97985217da7
+guid: ce00556fd6ddcc1478b1a3655fe279e6
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: "underh\xF8nsebur2lavereopacity"
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0

@@ -29,7 +29,7 @@ public class PortalDoor : MonoBehaviour
             this.renderer.enabled = false;
 
             var visualPortal = Instantiate(portalPrefab, this.transform.position, this.transform.rotation) as GameObject;
-            visualPortal.transform.localScale = this.transform.localScale;
+            //visualPortal.transform.localScale = this.transform.localScale;
         }
     }
 
