@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 712b946e16a07f1409d0d1a952a41fdb
+guid: 389b32a3f5b068047ae7ffb3dcf7406c
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -335,7 +335,7 @@ ModelImporter:
     4300002: left_eye_mesh
     4300004: right_eye_mesh
     4300006: body_mesh1
-    7400000: ChickenWalk
+    7400000: Take 001
     9500000: //RootNode
     13700000: body_mesh1
     13700002: left_eye_mesh
@@ -348,9 +348,9 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    optimizeGameObjects: 1
+    optimizeGameObjects: 0
     motionNodeName: 
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
@@ -358,10 +358,10 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: ChickenWalk
+      name: Take 001
       takeName: Take 001
       firstFrame: 2
-      lastFrame: 24
+      lastFrame: 25
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -383,23 +383,39 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: pPlane1
+      - path: bshp
+        weight: 1
+      - path: bshp/group1
+        weight: 1
+      - path: bshp/group3
+        weight: 1
+      - path: bshp/group4
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: chockien_back_up
+        weight: 1
+      - path: cont
+        weight: 1
+      - path: cont/COG
+        weight: 1
+      - path: cont/COG/COG1
+        weight: 1
+      - path: cont/COG/lf_con_shoulder
+        weight: 1
+      - path: cont/COG/lf_foot_con
+        weight: 1
+      - path: cont/COG/rt_Con_shoulder
+        weight: 1
+      - path: cont/COG/rt_foot_con
+        weight: 1
+      - path: cont/ikHandle1
+        weight: 1
+      - path: cont/ikHandle2
+        weight: 1
+      - path: cont/look_at
         weight: 1
       - path: flexi_spine2:flexi_spine01
-        weight: 1
-      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01
-        weight: 1
-      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_start01
-        weight: 1
-      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_start01/flexi_spine2:flexi_anim_start01
-        weight: 1
-      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_mid01
-        weight: 1
-      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_mid01/flexi_spine2:flexi_anim_mid01
-        weight: 1
-      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_endt01
-        weight: 1
-      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_endt01/flexi_spine2:flexi_anim_endt01
         weight: 1
       - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01
         weight: 1
@@ -433,6 +449,20 @@ ModelImporter:
         weight: 1
       - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_flcs01/flexi_spine2:flexi_flcs_e01/flexi_spine2:flexi_anim_e01/flexi_spine2:flexi_bind_e01
         weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_endt01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_endt01/flexi_spine2:flexi_anim_endt01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_mid01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_mid01/flexi_spine2:flexi_anim_mid01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_start01
+        weight: 1
+      - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_Global01/flexi_spine2:flexi_grp_anim_start01/flexi_spine2:flexi_anim_start01
+        weight: 1
       - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01
         weight: 1
       - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_cWire_surface01
@@ -456,20 +486,6 @@ ModelImporter:
       - path: flexi_spine2:flexi_spine01/flexi_spine2:flexi_hidden01/flexi_spine2:flexi_twistHdl_surface01
         weight: 1
       - path: flexi_spine3:flexi_spine01
-        weight: 1
-      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01
-        weight: 1
-      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_start01
-        weight: 1
-      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_start01/flexi_spine3:flexi_anim_start01
-        weight: 1
-      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_mid01
-        weight: 1
-      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_mid01/flexi_spine3:flexi_anim_mid01
-        weight: 1
-      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_endt01
-        weight: 1
-      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_endt01/flexi_spine3:flexi_anim_endt01
         weight: 1
       - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01
         weight: 1
@@ -503,6 +519,20 @@ ModelImporter:
         weight: 1
       - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_flcs01/flexi_spine3:flexi_flcs_e01/flexi_spine3:flexi_anim_e01/flexi_spine3:flexi_bind_e01
         weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_endt01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_endt01/flexi_spine3:flexi_anim_endt01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_mid01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_mid01/flexi_spine3:flexi_anim_mid01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_start01
+        weight: 1
+      - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_Global01/flexi_spine3:flexi_grp_anim_start01/flexi_spine3:flexi_anim_start01
+        weight: 1
       - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01
         weight: 1
       - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_cWire_surface01
@@ -526,20 +556,6 @@ ModelImporter:
       - path: flexi_spine3:flexi_spine01/flexi_spine3:flexi_hidden01/flexi_spine3:flexi_twistHdl_surface01
         weight: 1
       - path: flexi_spine4:flexi_spine01
-        weight: 1
-      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01
-        weight: 1
-      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_start01
-        weight: 1
-      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_start01/flexi_spine4:flexi_anim_start01
-        weight: 1
-      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_mid01
-        weight: 1
-      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_mid01/flexi_spine4:flexi_anim_mid01
-        weight: 1
-      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_endt01
-        weight: 1
-      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_endt01/flexi_spine4:flexi_anim_endt01
         weight: 1
       - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01
         weight: 1
@@ -573,6 +589,20 @@ ModelImporter:
         weight: 1
       - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_flcs01/flexi_spine4:flexi_flcs_e01/flexi_spine4:flexi_anim_e01/flexi_spine4:flexi_bind_e01
         weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_endt01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_endt01/flexi_spine4:flexi_anim_endt01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_mid01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_mid01/flexi_spine4:flexi_anim_mid01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_start01
+        weight: 1
+      - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_Global01/flexi_spine4:flexi_grp_anim_start01/flexi_spine4:flexi_anim_start01
+        weight: 1
       - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01
         weight: 1
       - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_cWire_surface01
@@ -595,73 +625,21 @@ ModelImporter:
         weight: 1
       - path: flexi_spine4:flexi_spine01/flexi_spine4:flexi_hidden01/flexi_spine4:flexi_twistHdl_surface01
         weight: 1
-      - path: chockien_back_up
-        weight: 1
       - path: Lamp
         weight: 1
-      - path: Camera
-        weight: 1
       - path: mesh_grp
+        weight: 1
+      - path: mesh_grp/body_mesh1
         weight: 1
       - path: mesh_grp/left_eye_mesh
         weight: 1
       - path: mesh_grp/right_eye_mesh
         weight: 1
-      - path: mesh_grp/body_mesh1
-        weight: 1
-      - path: cont
-        weight: 1
-      - path: cont/ikHandle1
-        weight: 1
-      - path: cont/ikHandle2
-        weight: 1
-      - path: cont/COG
-        weight: 1
-      - path: cont/COG/lf_foot_con
-        weight: 1
-      - path: cont/COG/rt_foot_con
-        weight: 1
-      - path: cont/COG/lf_con_shoulder
-        weight: 1
-      - path: cont/COG/rt_Con_shoulder
-        weight: 1
-      - path: cont/COG/COG1
-        weight: 1
-      - path: cont/look_at
-        weight: 1
-      - path: bshp
-        weight: 1
-      - path: bshp/group4
-        weight: 1
-      - path: bshp/group3
-        weight: 1
-      - path: bshp/group1
+      - path: pPlane1
         weight: 1
       - path: skeleton
         weight: 1
       - path: skeleton/head_bone
-        weight: 1
-      - path: skeleton/head_bone/head_end
-        weight: 1
-      - path: skeleton/head_bone/head_end/kam_bone_02
-        weight: 1
-      - path: skeleton/head_bone/head_end/kam_bone_02/joint4
-        weight: 1
-      - path: skeleton/head_bone/head_end/kam_bone_01
-        weight: 1
-      - path: skeleton/head_bone/head_end/kam_bone_01/joint6
-        weight: 1
-      - path: skeleton/head_bone/head_end/kam_bone_03
-        weight: 1
-      - path: skeleton/head_bone/head_end/kam_bone_03/joint7
-        weight: 1
-      - path: skeleton/head_bone/left_eye_Ebone
-        weight: 1
-      - path: skeleton/head_bone/left_eye_Ebone/left_eye_end
-        weight: 1
-      - path: skeleton/head_bone/right_eye_Ebone
-        weight: 1
-      - path: skeleton/head_bone/right_eye_Ebone/right_eye_end
         weight: 1
       - path: skeleton/head_bone/beak_high_bone_01
         weight: 1
@@ -675,19 +653,29 @@ ModelImporter:
         weight: 1
       - path: skeleton/head_bone/beak_low_bone_01/beak_low_bone_02/beak_low_end
         weight: 1
+      - path: skeleton/head_bone/head_end
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_01
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_01/joint6
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_02
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_02/joint4
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_03
+        weight: 1
+      - path: skeleton/head_bone/head_end/kam_bone_03/joint7
+        weight: 1
+      - path: skeleton/head_bone/left_eye_Ebone
+        weight: 1
+      - path: skeleton/head_bone/left_eye_Ebone/left_eye_end
+        weight: 1
+      - path: skeleton/head_bone/right_eye_Ebone
+        weight: 1
+      - path: skeleton/head_bone/right_eye_Ebone/right_eye_end
+        weight: 1
       - path: skeleton/root_bone
-        weight: 1
-      - path: skeleton/root_bone/left_leg_bone_01
-        weight: 1
-      - path: skeleton/root_bone/left_leg_bone_01/left_leg_bone_02
-        weight: 1
-      - path: skeleton/root_bone/left_leg_bone_01/left_leg_bone_02/left_leg_end
-        weight: 1
-      - path: skeleton/root_bone/right_leg_bone_01
-        weight: 1
-      - path: skeleton/root_bone/right_leg_bone_01/right_leg_bone_02
-        weight: 1
-      - path: skeleton/root_bone/right_leg_bone_01/right_leg_bone_02/right_leg_end
         weight: 1
       - path: skeleton/root_bone/joint26
         weight: 1
@@ -709,12 +697,24 @@ ModelImporter:
         weight: 1
       - path: skeleton/root_bone/joint26/plavis_bone/right_shulder_bone/right_wind_bone_01/right_wind_bone_02/right_wind_end
         weight: 1
+      - path: skeleton/root_bone/left_leg_bone_01
+        weight: 1
+      - path: skeleton/root_bone/left_leg_bone_01/left_leg_bone_02
+        weight: 1
+      - path: skeleton/root_bone/left_leg_bone_01/left_leg_bone_02/left_leg_end
+        weight: 1
+      - path: skeleton/root_bone/right_leg_bone_01
+        weight: 1
+      - path: skeleton/root_bone/right_leg_bone_01/right_leg_bone_02
+        weight: 1
+      - path: skeleton/root_bone/right_leg_bone_01/right_leg_bone_02/right_leg_end
+        weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .5
+    globalScale: .600000024
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -744,7 +744,7 @@ ModelImporter:
     armStretch: .0500000007
     legStretch: .0500000007
     feetSpacing: 0
-    rootMotionBoneName: root_bone
+    rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   additionalBone: 0
