@@ -1,18 +1,17 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class InputReceiver : MonoBehaviour {
-
+public class InputReceiver : MonoBehaviour
+{
     private PlayerController _playerController;
 
-	// Use this for initialization
-	void Start () 
-    {        
+    // Use this for initialization
+    private void Start()
+    {
         _playerController = this.GetComponent<PlayerController>();
-	}
-	
-	// Update is called once per frame
-	void Update () 
+    }
+
+    // Update is called once per frame
+    private void Update()
     {
         if (_playerController == null)
         {
@@ -38,5 +37,5 @@ public class InputReceiver : MonoBehaviour {
         {
             _playerController.Rotate(rotateX, rotateY);
         }
-	}
+    }
 }

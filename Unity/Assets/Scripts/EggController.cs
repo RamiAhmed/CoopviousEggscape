@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class EggController : MonoBehaviour {
-
+public class EggController : MonoBehaviour
+{
     public float eggMoveSpeed = 10f;
     public float eggMaxLifespan = 10f;
 
@@ -15,13 +14,13 @@ public class EggController : MonoBehaviour {
         set;
     }
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () 
+    // Use this for initialization
+    private void Start()
+    {
+    }
+
+    // Update is called once per frame
+    private void Update()
     {
         _eggLifespan += Time.deltaTime;
 
@@ -30,7 +29,7 @@ public class EggController : MonoBehaviour {
             Destroy(this.gameObject, 0.01f);
             _destroyed = true;
         }
-	}
+    }
 
     private void FixedUpdate()
     {
