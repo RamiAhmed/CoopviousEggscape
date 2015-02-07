@@ -48,7 +48,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraSizeController.cs" />
      <Compile Include="Assets\Scripts\EggController.cs" />
+     <Compile Include="Assets\Scripts\EventTrigger.cs" />
      <Compile Include="Assets\Scripts\InputReceiver.cs" />
+     <Compile Include="Assets\Scripts\OpenDoorTrigger.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
