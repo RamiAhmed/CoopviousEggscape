@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-using Exploder;
+﻿using Exploder;
+using UnityEngine;
 
 public class EggController : MonoBehaviour
 {
@@ -18,7 +18,7 @@ public class EggController : MonoBehaviour
         set;
     }
 
-    void Start()
+    private void Start()
     {
         _exploder = this.GetComponentInChildren<ExploderObject>();
 
@@ -46,7 +46,7 @@ public class EggController : MonoBehaviour
 
         this.transform.rotation = Quaternion.Lerp(transform.rotation, Random.rotation, Time.fixedDeltaTime * 5f);
     }
-    
+
     public void Explode()
     {
         this.tag = "Exploder";
