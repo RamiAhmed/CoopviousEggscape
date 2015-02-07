@@ -75,31 +75,13 @@ public class PlayerController : MonoBehaviour {
 
     public void Rotate(float deltaX, float deltaY)
     {
+        // need to invert the Y
         deltaY *= -1f;
-        this.transform.eulerAngles = new Vector3(this.transform.eulerAngles.x, Mathf.Atan2(deltaX, deltaY) * Mathf.Rad2Deg, this.transform.eulerAngles.z);
 
-        //Vector3 targetDirection = new Vector3(deltaX, deltaY, 0f);
-
-        //if (targetDirection.sqrMagnitude != 0f)
-        //{
-        //    Quaternion targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
-        //    this.transform.rotation = targetRotation;
-        //}
-        //if (Mathf.Abs(deltaX) > 0f)
-        //{
-        //    this.transform.Rotate(Vector3.up, deltaX);
-        //}
-        
-        //if (Mathf.Abs(deltaY) > 0f)
-        //{
-        //    this.transform.Rotate()
-        //}
-
-        //Debug.Log("Rotate X: " + deltaX + ", " + deltaY);
-
-        //transform.localEulerAngles = new Vector3(deltaX, deltaY, 0f);
-        //Quaternion eulerRot = Quaternion.Euler(deltaX, 0f, deltaY);
-        //transform.rotation = Quaternion.Slerp(transform.rotation, eulerRot, Time.deltaTime * 20f);
+        // rotate smoothly
+        Vector3 rot = new Vector3(0f, Mathf.Atan2(deltaX, deltaY) * Mathf.Rad2Deg, 0f);
+        var qr = Quaternion.Euler(rot);
+        this.transform.rotation = Quaternion.Lerp(transform.rotation, qr, Time.deltaTime * 5f);
     }
 
     public void Attack()
