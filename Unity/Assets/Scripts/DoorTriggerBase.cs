@@ -4,7 +4,7 @@ public abstract class DoorTriggerBase : EventTrigger
 {
     protected GameObject _door;
 
-    private void Start()
+    protected virtual void Start()
     {
         GameObject[] doors = GameObject.FindGameObjectsWithTag("Door");
 
