@@ -9,7 +9,7 @@ public class CameraSizeController : MonoBehaviour
     public float minCameraSize = 7f;
     public float maxCameraSize = 15f;
 
-	public float extraPlayerZPosition = 1f;
+	public float extraPlayerZPosition = -9f;
 
     private Camera _camera;
 
