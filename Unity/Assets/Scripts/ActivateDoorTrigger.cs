@@ -34,11 +34,13 @@ public class ActivateDoorTrigger : EventTrigger
                 return;
             }
 
+            // active the portal door
             portalDoor.ActiveDoor();
 
-            //GameObject.Destroy(_door, 0.1f);
-            GameObject.Destroy(other.gameObject, 0.1f);
-            GameObject.Destroy(this.gameObject, 0.15f);
+            // tell the egg to explode
+            other.GetComponent<EggController>().Explode();
+
+            GameObject.Destroy(this.gameObject, 0.15f); // trigger removes itself
         }
     }
 

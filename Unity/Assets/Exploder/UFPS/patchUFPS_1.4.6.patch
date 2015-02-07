@@ -1,0 +1,42 @@
+159a160,162
+>             // apply exploder
+> 		    ApplyExploder(hit.collider.gameObject);
+> 
+184d186
+< 
+186a189,219
+>     private void ApplyExploder(GameObject target)
+>     {
+>         var exploder = Exploder.Utils.ExploderSingleton.ExploderInstance;
+> 
+>         if (exploder)
+>         {
+>             // check if the target is explodable object
+>             if (Exploder.ExploderUtils.IsExplodable(target))
+>             {
+>                 // activate exploder
+>                 Exploder.ExploderUtils.SetActive(exploder.gameObject, true);
+> 
+>                 // move exploder object to the same position
+>                 exploder.transform.position = Exploder.ExploderUtils.GetCentroid(target);
+> 
+>                 // decrease the radius so the exploder is not interfering with other objects
+>                 exploder.Radius = 1.0f;
+> 
+>                 // DONE!
+>                 exploder.Explode(OnExplosion);
+>             }
+>         }
+>     }
+> 
+>     private void OnExplosion(float time, Exploder.ExploderObject.ExplosionState state)
+>     {
+>         if (state == Exploder.ExploderObject.ExplosionState.ExplosionFinished)
+>         {
+>             //Utils.Log("Exploded");
+>         }
+>     }
+188c221
+< 	/// <summary>
+---
+>     /// <summary>
