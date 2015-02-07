@@ -1,14 +1,7 @@
 ﻿using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : SoundPlayerBase
 {
-    public enum PlayerState
-    {
-        THIN = 0,
-        MEDIUM,
-        FAT
-    }
-
     public float maxPlayerSpeed = 20f;
     public float minPlayerSpeed = 1f;
     public float playerAcceleration = 2f;
@@ -18,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float playerAttackConeInDegrees = 45;
     public int maxAttacksPerSecond = 2;
     public float cameraEdgeFactor = 10f;
+    public float disabledControlsTimeOnAttack = 0.5f;
 
     public GameObject eggPrefab;
     public GameObject otherPlayer;
@@ -26,14 +20,17 @@ public class PlayerController : MonoBehaviour
 	public AudioClip[] attackSoundsScream;
 	public AudioClip[] attackSoundsMiss;
 
-    private AudioSource _audioPlayer;
-
-    private PlayerState _playerState = PlayerState.THIN;
-    private float _fatnessLevel = 0f;	
-
     private Vector3 _velocity;
     private float _lastAttack;
     private Animator _animator;
+
+    private float _lastDisabledControls;
+
+    public bool disabledControls
+    {
+        get;
+        set;
+    }
 
     public Vector3 velocity
     {
@@ -42,8 +39,10 @@ public class PlayerController : MonoBehaviour
     }
 
     // Use this for initialization
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
+
         Debug.Log("Player " + playerNumber + " ready!");
 
         if (eggPrefab == null)
@@ -63,19 +62,17 @@ public class PlayerController : MonoBehaviour
         {
             Debug.LogError(this.gameObject.name + " is missing its Animator component");
         }
-
-        _audioPlayer = this.GetComponent<AudioSource>();
-        if (_audioPlayer == null)
-        {
-            Debug.LogError(this.gameObject.name + " is missing its AudioSource component");
-        }
     }
 
     private void Update()
     {
-        _fatnessLevel += Time.deltaTime;
-
         _animator.SetBool("walking", _velocity.sqrMagnitude > minPlayerSpeed);
+
+        float currentTime = Time.time;
+        if (currentTime - _lastDisabledControls > disabledControlsTimeOnAttack)
+        {
+            disabledControls = false;
+        }
     }
 
     private void FixedUpdate()
@@ -106,6 +103,11 @@ public class PlayerController : MonoBehaviour
 
     public void Move(float deltaX, float deltaY)
     {
+        if (disabledControls)
+        {
+            return;
+        }
+
         // add up velocity gradually
         _velocity += new Vector3(deltaX, 0f, deltaY);
 
@@ -134,7 +136,9 @@ public class PlayerController : MonoBehaviour
         {
             // other player within attack cone radius
             Vector3 eggDirection = (otherPlayerPos - selfPos).normalized;
-            MakeEgg(otherPlayerPos, eggDirection);
+
+            var otherPlayerController = otherPlayer.GetComponent<PlayerController>();
+            otherPlayerController.MakeEgg(otherPlayerPos, eggDirection);
             PlayRandomSound(attackSoundsImpact);
         }
         else
@@ -143,7 +147,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void MakeEgg(Vector3 position, Vector3 direction)
+    public void MakeEgg(Vector3 position, Vector3 direction)
     {
         PlayRandomSound(attackSoundsScream);
 
@@ -153,39 +157,12 @@ public class PlayerController : MonoBehaviour
         // set egg move direction
         var eggController = newEgg.GetComponent<EggController>();
         eggController.direction = direction;
-        
+
+        this.transform.LookAt(otherPlayer.transform.position);
+        _velocity = Vector3.zero;
+        disabledControls = true;
+        _lastDisabledControls = Time.time;
+
         // TODO: Set other egg properties
-    }
-
-	private void PlayRandomSound(AudioClip[] audioClips)
-	{
-        if (_audioPlayer.isPlaying)
-        {
-            var newAudioPlayer = this.gameObject.AddComponent<AudioSource>();
-            PlayRandomSound(newAudioPlayer, audioClips);
-        }
-        else
-        {
-            PlayRandomSound(_audioPlayer, audioClips);
-        }
-	}
-
-    private void PlayRandomSound(AudioSource player, AudioClip[] audioClips)
-    {
-        if (player.isPlaying)
-        {
-            return;
-        }
-
-        int random = Random.Range(0, audioClips.Length);
-        var audioClip = audioClips[random];
-        if (audioClip == null)
-        {
-            Debug.LogError(this.gameObject.name + " could not find the audioclip specified in: " + audioClips);
-            return;
-        }
-
-        player.clip = audioClip;
-        player.Play();
     }
 }
