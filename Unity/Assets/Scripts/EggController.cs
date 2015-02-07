@@ -14,11 +14,6 @@ public class EggController : MonoBehaviour
         set;
     }
 
-    // Use this for initialization
-    private void Start()
-    {
-    }
-
     // Update is called once per frame
     private void Update()
     {
@@ -37,5 +32,7 @@ public class EggController : MonoBehaviour
         {
             this.transform.position = transform.position + direction * eggMoveSpeed * Time.fixedDeltaTime;
         }
+
+        this.transform.rotation = Quaternion.Lerp(transform.rotation, Random.rotation, Time.fixedDeltaTime * 5f);
     }
 }
