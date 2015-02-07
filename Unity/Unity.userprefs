@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FenceScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\EggController.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="88" Column="43" />
-      <File FileName="Assets\Scripts\FenceScript.cs" Line="21" Column="25" />
+      <File FileName="Assets\Scripts\EggController.cs" Line="8" Column="2" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FenceScript.cs" Line="18" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
