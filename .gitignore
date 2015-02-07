@@ -19,3 +19,9 @@ sysinfo.txt
 UnityVS/
 UnityVS.*
 Unity/Assets/Models/Materials/Material.mat
+*.sln
+Unity/Unity.sln
+*.csproj
+Unity/Assembly-CSharp-vs.csproj
+Unity/Assembly-CSharp-Editor.csproj
+Unity/Assembly-CSharp-Editor-vs.csproj
