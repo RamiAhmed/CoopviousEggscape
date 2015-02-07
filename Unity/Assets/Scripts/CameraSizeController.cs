@@ -30,7 +30,8 @@ public class CameraSizeController : MonoBehaviour
 
     private void Resize()
     {
-        float distance = Vector3.Distance(Player0.transform.position, Player1.transform.position);
+        float distance = Vector3.Distance(Player0.transform.position, Player1.transform.position) * 0.5f ;
+
         if (distance <= minCameraSize)
         {
             _camera.orthographicSize = minCameraSize;
