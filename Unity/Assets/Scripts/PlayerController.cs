@@ -61,6 +61,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.LogError(this.gameObject.name + " is missing its Animator component");
         }
+
 		_audioPlayer = this.GetComponent<AudioSource>();
 		if (_audioPlayer == null)
 		{
@@ -160,4 +161,15 @@ public class PlayerController : MonoBehaviour
 
         // TODO: Set other egg properties
     }
+
+	private void PlayRandomSound(AudioClip[] audioClips)
+	{
+		int length = audioClips.Length;
+		int random = Random.Range(0, length);
+		var audioClip = audioClips[random];
+		if (audioClip == null)
+		{
+			Debug.LogError(this.gameObject.name + " could not find the audioclip specified in: " + audioClips);
+		}
+	}
 }

@@ -1,51 +1,16 @@
 fileFormatVersion: 2
-guid: 54d0b107d686c0848bdb7c8ff4797bc6
+guid: 3c20c8e9dbf9eb540b87a87abbf620a9
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: Armature
-    100002: Armature|Bone
-    100004: Armature|Bone.001
-    100006: Armature|Bone.002
-    100008: Armature|Bone.003
-    100010: Armature|Bone.004
-    100012: Armature|Bone_L
-    100014: Armature|Bone_L.001
-    100016: Armature|Bone_L.002
-    100018: Armature|Bone_L.003
-    100020: Armature|Bone_R
-    100022: Armature|Bone_R.001
-    100024: Armature|Bone_R.002
-    100026: Armature|Bone_R.003
-    100028: Armature|Root
-    100030: Circle
-    100032: pSphere4 pSphere6
-    100034: //RootNode
-    400000: Armature
-    400002: Armature|Bone
-    400004: Armature|Bone.001
-    400006: Armature|Bone.002
-    400008: Armature|Bone.003
-    400010: Armature|Bone.004
-    400012: Armature|Bone_L
-    400014: Armature|Bone_L.001
-    400016: Armature|Bone_L.002
-    400018: Armature|Bone_L.003
-    400020: Armature|Bone_R
-    400022: Armature|Bone_R.001
-    400024: Armature|Bone_R.002
-    400026: Armature|Bone_R.003
-    400028: Armature|Root
-    400030: Circle
-    400032: pSphere4 pSphere6
-    400034: //RootNode
-    2300000: Circle
-    3300000: Circle
-    4300000: Circle
-    4300002: pSphere4 pSphere6
-    7400000: Armature|ArmatureAction
-    9500000: //RootNode
-    13700000: pSphere4 pSphere6
+    100000: Default
+    100002: //RootNode
+    400000: Default
+    400002: //RootNode
+    2300000: Default
+    3300000: Default
+    4300000: Default
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -65,7 +30,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 5
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -97,6 +62,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   additionalBone: 0
   userData: 
