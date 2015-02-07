@@ -4,12 +4,14 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 
     public float maxPlayerSpeed = 20f;
+    public float minPlayerSpeed = 1f;
     public float playerSpeed = 10f; 
     public int playerNumber = 1;
     public float dragFactor = 2f;
     public float playerRadius = 2f;
     public float playerAttackConeInDegrees = 45;
     public int maxAttacksPerSecond = 2;
+    public float cameraEdgeFactor = 10f;
 
     public GameObject eggPrefab;
     public GameObject otherPlayer;
@@ -42,12 +44,19 @@ public class PlayerController : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        if (_velocity.sqrMagnitude > 0f)
+        if (_velocity.sqrMagnitude > minPlayerSpeed)
         {
-            Vector3 selfPos = this.transform.position;
-
             // move forward in velocity direction as long as there is a velocity
+            Vector3 selfPos = this.transform.position;
             Vector3 speed = _velocity * playerSpeed * Time.fixedDeltaTime;
+
+            Vector3 projectedPos = Camera.main.WorldToScreenPoint(selfPos + speed);
+            if (projectedPos.x < cameraEdgeFactor || projectedPos.x > Screen.width - cameraEdgeFactor ||
+                projectedPos.y < cameraEdgeFactor || projectedPos.y > Screen.height - cameraEdgeFactor)
+            {
+                return;
+            }            
+
             this.transform.position = selfPos + speed;
             _velocity -= speed * dragFactor;
 
