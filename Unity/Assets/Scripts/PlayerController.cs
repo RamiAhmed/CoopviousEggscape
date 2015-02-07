@@ -23,6 +23,7 @@ public class PlayerController : SoundPlayerBase
     private Vector3 _velocity;
     private float _lastAttack;
     private Animator _animator;
+    private ParticleSystem _featherParticles;
 
     private float _lastDisabledControls;
 
@@ -68,6 +69,12 @@ public class PlayerController : SoundPlayerBase
         if (_animator == null)
         {
             Debug.LogError(this.gameObject.name + " is missing its Animator component");
+        }
+
+        _featherParticles = this.GetComponentInChildren<ParticleSystem>();
+        if (_featherParticles == null)
+        {
+            Debug.LogError(this.gameObject.name + " is missing its feather particle system");
         }
     }
 
@@ -179,6 +186,8 @@ public class PlayerController : SoundPlayerBase
         _lastDisabledControls = Time.time;
 
         _animator.SetTrigger("Hit");
+
+        _featherParticles.Play();
 
         // TODO: Set other egg properties
     }
