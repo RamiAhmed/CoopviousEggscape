@@ -2,6 +2,13 @@
 
 public class PlayerController : MonoBehaviour
 {
+    public enum PlayerState
+    {
+        THIN = 0,
+        MEDIUM,
+        FAT
+    }
+
     public float maxPlayerSpeed = 20f;
     public float minPlayerSpeed = 1f;
     public float playerAcceleration = 2f;
@@ -14,6 +21,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject eggPrefab;
     public GameObject otherPlayer;
+
+    private PlayerState _playerState = PlayerState.THIN;
 
     private Vector3 _velocity;
     private float _lastAttack;
