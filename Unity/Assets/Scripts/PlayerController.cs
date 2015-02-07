@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour {
 
     public float maxPlayerSpeed = 20f;
     public float minPlayerSpeed = 1f;
-    public float playerSpeed = 10f; 
+    public float playerAcceleration = 10f; 
     public int playerNumber = 1;
     public float dragFactor = 2f;
     public float playerRadius = 2f;
@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour {
         {
             // move forward in velocity direction as long as there is a velocity
             Vector3 selfPos = this.transform.position;
-            Vector3 speed = _velocity * playerSpeed * Time.fixedDeltaTime;
+            Vector3 speed = _velocity * playerAcceleration * Time.fixedDeltaTime;
 
             Vector3 projectedPos = Camera.main.WorldToScreenPoint(selfPos + speed);
             if (projectedPos.x < cameraEdgeFactor || projectedPos.x > Screen.width - cameraEdgeFactor ||
