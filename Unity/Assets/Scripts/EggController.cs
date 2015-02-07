@@ -4,7 +4,7 @@ using UnityEngine;
 public class EggController : MonoBehaviour
 {
     public float eggMoveSpeed = 10f;
-    public float eggMaxLifespan = 10f;
+    public float eggMaxLifespan = 5f;
 
     private float _eggLifespan;
     private bool _destroyed;
