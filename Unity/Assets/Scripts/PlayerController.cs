@@ -85,6 +85,7 @@ public class PlayerController : MonoBehaviour
 
             _velocity -= speed * dragFactor;
             this.rigidbody.MovePosition(selfPos + speed);
+			this.transform.LookAt(selfPos + speed);
         }
     }
 
@@ -99,13 +100,13 @@ public class PlayerController : MonoBehaviour
 
     public void Rotate(float deltaX, float deltaY)
     {
-        // need to invert the Y
-        deltaY *= -1f;
-
-        // rotate smoothly
-        Vector3 rot = new Vector3(0f, Mathf.Atan2(deltaX, deltaY) * Mathf.Rad2Deg, 0f);
-        var qr = Quaternion.Euler(rot);
-        this.transform.rotation = Quaternion.Lerp(transform.rotation, qr, Time.deltaTime * 5f);
+//        // need to invert the Y
+//        deltaY *= -1f;
+//
+//        // rotate smoothly
+//        Vector3 rot = new Vector3(0f, Mathf.Atan2(deltaX, deltaY) * Mathf.Rad2Deg, 0f);
+//        var qr = Quaternion.Euler(rot);
+//        this.transform.rotation = Quaternion.Lerp(transform.rotation, qr, Time.deltaTime * 5f);
     }
 
     public void Attack()
