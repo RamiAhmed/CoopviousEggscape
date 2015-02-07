@@ -60,17 +60,36 @@ public class PlayerController : MonoBehaviour {
             this.transform.position = selfPos + speed;
             _velocity -= speed * dragFactor;
 
-            this.transform.LookAt(selfPos + _velocity);
+            //this.transform.LookAt(selfPos + _velocity);
         }
     }
 
     public void Move(float deltaX, float deltaY)
     {
         // add up velocity gradually
-        _velocity += new Vector3(deltaX, deltaY, 0f);
+        _velocity += new Vector3(deltaY, deltaX, 0f);
 
         // make sure velocity stays below max speed
         _velocity = Vector3.ClampMagnitude(_velocity, maxPlayerSpeed);
+    }
+
+    public void Rotate(float deltaX, float deltaY)
+    {
+        //if (Mathf.Abs(deltaX) > 0f)
+        //{
+        //    this.transform.Rotate(Vector3.up, deltaX);
+        //}
+        
+        //if (Mathf.Abs(deltaY) > 0f)
+        //{
+        //    this.transform.Rotate()
+        //}
+
+        //Debug.Log("Rotate X: " + deltaX + ", " + deltaY);
+
+        //transform.localEulerAngles = new Vector3(deltaX, deltaY, 0f);
+        //Quaternion eulerRot = Quaternion.Euler(deltaX, 0f, deltaY);
+        //transform.rotation = Quaternion.Slerp(transform.rotation, eulerRot, Time.deltaTime * 20f);
     }
 
     public void Attack()
