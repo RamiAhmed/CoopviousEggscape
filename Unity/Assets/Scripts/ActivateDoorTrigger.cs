@@ -2,10 +2,17 @@
 
 public class ActivateDoorTrigger : DoorTriggerBase
 {
-    protected override void HandleDoor(Collider other, PortalDoor door)
+    protected override void HandleDoor(Collider other, GameObject door)
     {
+        var portalDoor = door.GetComponent<PortalDoor>();
+        if (portalDoor == null)
+        {
+            Debug.LogError(this.gameObject.name + " could not find PortalDoor component on " + _door);
+            return;
+        }
+
         // activate the portal door
-        door.ActivateDoor();
+        portalDoor.ActivateDoor();
 
         // tell the egg to explode
         other.GetComponent<EggController>().Explode();

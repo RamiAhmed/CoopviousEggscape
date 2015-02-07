@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: f498b0d4f98b4ed49a2afbeecc0220ac
+=======
+guid: cd186415d2727044595b9b085ed3f7de
+>>>>>>> origin/master
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -44,7 +48,11 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
+<<<<<<< HEAD
     globalScale: 35
+=======
+    globalScale: .00999999978
+>>>>>>> origin/master
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -76,6 +84,10 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+<<<<<<< HEAD
   animationType: 0
+=======
+  animationType: 2
+>>>>>>> origin/master
   additionalBone: 0
   userData: 

@@ -4,7 +4,7 @@ public abstract class DoorTriggerBase : EventTrigger
 {
     protected GameObject _door;
 
-    private void Start()
+    protected virtual void Start()
     {
         GameObject[] doors = GameObject.FindGameObjectsWithTag("Door");
 
@@ -27,18 +27,11 @@ public abstract class DoorTriggerBase : EventTrigger
     {
         if (_door != null)
         {
-            var portalDoor = _door.GetComponent<PortalDoor>();
-            if (portalDoor == null)
-            {
-                Debug.LogError(this.gameObject.name + " could not find PortalDoor component on " + _door);
-                return;
-            }
-
-            HandleDoor(other, portalDoor);
+            HandleDoor(other, _door);
         }
     }
 
-    protected abstract void HandleDoor(Collider other, PortalDoor door);
+    protected abstract void HandleDoor(Collider other, GameObject door);
 
     protected override void EndCollision(Collider other)
     {

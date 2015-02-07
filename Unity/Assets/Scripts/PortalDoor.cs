@@ -53,8 +53,11 @@ public class PortalDoor : MonoBehaviour
 
         if (coll.transform.CompareTag("Player"))
         {
-            var other = coll.transform.root;
-            Teleport(other.gameObject);
+            var players = GameObject.FindGameObjectsWithTag("Player");
+            for (int i = 0; i < players.Length; i++)
+            {
+                Teleport(players[i]);
+            }
         }
     }
 }
