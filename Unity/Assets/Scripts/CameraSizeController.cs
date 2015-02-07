@@ -45,16 +45,11 @@ public class CameraSizeController : MonoBehaviour
         }
     }
 
-<<<<<<< HEAD
+
 	void CenterCamera() {
 		Vector3 player0Position = new Vector3(Player0.transform.position.x, Player0.transform.position.y, Player0.transform.position.z + extraPlayerZPosition);
 		Vector3 player1Position = new Vector3(Player1.transform.position.x, Player1.transform.position.y, Player1.transform.position.z + extraPlayerZPosition);
 		Vector3 position = CalculateMidVector(player0Position, player1Position);
-=======
-    private void CenterCamera()
-    {
-        Vector3 position = CalculateMidVector(Player0.transform.position, Player1.transform.position);
->>>>>>> origin/master
 
         _camera.transform.position = new Vector3(position.x, _camera.transform.position.y, position.z);
     }
