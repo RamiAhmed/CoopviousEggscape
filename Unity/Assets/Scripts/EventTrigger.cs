@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public abstract class EventTrigger : MonoBehaviour {
-
-    void OnTriggerEnter(Collider other)
+public abstract class EventTrigger : MonoBehaviour
+{
+    private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Egg"))
         {
@@ -11,7 +10,7 @@ public abstract class EventTrigger : MonoBehaviour {
         }
     }
 
-    void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Egg"))
         {
@@ -22,5 +21,4 @@ public abstract class EventTrigger : MonoBehaviour {
     protected abstract void StartCollision(Collider other);
 
     protected abstract void EndCollision(Collider other);
-
 }

@@ -1,11 +1,10 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class PlayerController : MonoBehaviour {
-
+public class PlayerController : MonoBehaviour
+{
     public float maxPlayerSpeed = 20f;
     public float minPlayerSpeed = 1f;
-    public float playerAcceleration = 2f; 
+    public float playerAcceleration = 2f;
     public int playerNumber = 1;
     public float dragFactor = 2f;
     public float playerRadius = 2f;
@@ -19,8 +18,9 @@ public class PlayerController : MonoBehaviour {
     private Vector3 _velocity;
     private float _lastAttack;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    private void Start()
+    {
         Debug.Log("Player " + playerNumber + " ready!");
 
         if (eggPrefab == null)
@@ -34,13 +34,12 @@ public class PlayerController : MonoBehaviour {
             // check for and alert if missing other player reference
             Debug.LogError(this.gameObject.name + " is missing its otherPlayer reference!");
         }
-	}
-	
-	// Update is called once per frame
-	void Update () 
+    }
+
+    // Update is called once per frame
+    private void Update()
     {
-	
-	}
+    }
 
     private void FixedUpdate()
     {
@@ -55,7 +54,7 @@ public class PlayerController : MonoBehaviour {
                 projectedPos.y < cameraEdgeFactor || projectedPos.y > Screen.height - cameraEdgeFactor)
             {
                 return;
-            }            
+            }
 
             this.transform.position = selfPos + speed;
             _velocity -= speed * dragFactor;
@@ -107,7 +106,7 @@ public class PlayerController : MonoBehaviour {
 
             if (Vector3.Angle(selfPos, otherPlayerPos) < playerAttackConeInDegrees)
             {
-                // other player within attack cone radius 
+                // other player within attack cone radius
                 Vector3 eggDirection = (otherPlayerPos - selfPos).normalized;
                 MakeEgg(otherPlayerPos, eggDirection);
             }
