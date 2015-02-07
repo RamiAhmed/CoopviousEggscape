@@ -2,17 +2,17 @@
 
 public class PlayerController : SoundPlayerBase
 {
-    public float maxPlayerSpeed = 20f;
+    public float maxPlayerSpeed = 10f;
     public float minPlayerSpeed = 1f;
     public float playerAcceleration = 2f;
     public int playerNumber = 1;
     public float dragFactor = 2f;
-    public float playerRadius = 2f;
-    public float playerAttackConeInDegrees = 45;
-    public int maxAttacksPerSecond = 2;
+    public float playerRadius = 4f;
+    public float maxAttacksPerSecond = 2f;
     public float cameraEdgeFactor = 10f;
-    public float disabledControlsTimeOnAttack = 0.5f;
+    public float disabledControlsTimeOnAttack = 0.4f;
 
+    public GameObject chickenHand;
     public GameObject eggPrefab;
     public GameObject otherPlayer;
 
@@ -56,6 +56,13 @@ public class PlayerController : SoundPlayerBase
             // check for and alert if missing other player reference
             Debug.LogError(this.gameObject.name + " is missing its otherPlayer reference!");
         }
+
+        if (chickenHand == null)
+        {
+            Debug.LogError(this.gameObject.name + " is missing its chicken hand prefab");
+        }
+
+        chickenHand.SetActive(false);
 
         _animator = this.GetComponent<Animator>();
         if (_animator == null)
@@ -126,6 +133,9 @@ public class PlayerController : SoundPlayerBase
 
         _lastAttack = currentTime;
 
+        chickenHand.SetActive(true);
+        Invoke("HideChickenHand", 0.4f);
+
         // TODO: Try to figure out how to vibrate the controller ?
         Debug.Log("Player " + playerNumber + " Attack!");
 
@@ -145,6 +155,11 @@ public class PlayerController : SoundPlayerBase
         {
             PlayRandomSound(attackSoundsMiss);
         }
+    }
+
+    private void HideChickenHand()
+    {
+        chickenHand.SetActive(false);
     }
 
     public void MakeEgg(Vector3 position, Vector3 direction)
