@@ -3,34 +3,41 @@ using System.Collections;
 
 public class CameraSizeController : MonoBehaviour {
 
-	GameObject Player1;
-	GameObject Player2;
+	public Camera Camera;
+
+	public GameObject Player0;
+	public GameObject Player1;
+
+	public float startCameraSize = 7;
+	public float minCameraSize = 7;
+	public float maxCameraSize = 15;
 
 	// Use this for initialization
 	void Start () {
-		Player1 = GameObject.Find("Player 1");
-		Player2 = GameObject.Find("Player 2");
+		Camera.orthographicSize = startCameraSize;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		CenterCamera();
 		Resize();
 	}
 
 	void Resize() {
-		//float distance = Vector3.Distance(Player1.transform.position, Player2.transform.position);
-
-		CenterCamera();
-
-		//Debug.Log(distance);
+		float distance = Vector3.Distance(Player0.transform.position, Player1.transform.position);
+		if (distance <= minCameraSize) {
+			Camera.orthographicSize = minCameraSize;
+		} else if (distance >= maxCameraSize) {
+			Camera.orthographicSize = maxCameraSize;
+		} else {
+			Camera.orthographicSize = distance;
+		}
 	}
 
 	void CenterCamera() {
-		Vector3 position = CalculateMidVector(Player1.transform.position, Player2.transform.position);
-		float distance = Vector3.Distance(Player1.transform.position, Player2.transform.position);
+		Vector3 position = CalculateMidVector(Player0.transform.position, Player1.transform.position);
 
-		Camera.main.transform.position = new Vector3(position.x, position.y, -10);
-		Camera.main.orthographicSize = distance;
+		Camera.transform.position = new Vector3(position.x, position.y, -10);
 	}
 
 	Vector3 CalculateMidVector(Vector3 first, Vector3 second) {
