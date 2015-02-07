@@ -1,17 +1,27 @@
-﻿using UnityEngine;
+﻿using Exploder;
+using UnityEngine;
 
 public class EggController : MonoBehaviour
 {
     public float eggMoveSpeed = 10f;
-    public float eggMaxLifespan = 10f;
+    public float eggMaxLifespan = 5f;
 
     private float _eggLifespan;
     private bool _destroyed;
+
+    private ExploderObject _exploder;
 
     public Vector3 direction
     {
         get;
         set;
+    }
+
+    private void Start()
+    {
+        _exploder = this.GetComponentInChildren<ExploderObject>();
+
+        //this.rigidbody.AddRelativeForce(new Vector3(0f, heightForce, 0f), ForceMode.Impulse);
     }
 
     // Update is called once per frame
@@ -21,7 +31,7 @@ public class EggController : MonoBehaviour
 
         if (_eggLifespan > eggMaxLifespan && !_destroyed)
         {
-            Destroy(this.gameObject, 0.01f);
+            Explode();
             _destroyed = true;
         }
     }
@@ -34,5 +44,11 @@ public class EggController : MonoBehaviour
         }
 
         this.transform.rotation = Quaternion.Lerp(transform.rotation, Random.rotation, Time.fixedDeltaTime * 5f);
+    }
+
+    public void Explode()
+    {
+        this.tag = "Exploder";
+        _exploder.Explode();
     }
 }

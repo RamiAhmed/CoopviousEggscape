@@ -20,7 +20,7 @@ public class PortalDoor : MonoBehaviour
         }
     }
 
-    public void ActiveDoor()
+    public void ActivateDoor()
     {
         if (!doorActivated)
         {
@@ -29,7 +29,7 @@ public class PortalDoor : MonoBehaviour
             this.renderer.enabled = false;
 
             var visualPortal = Instantiate(portalPrefab, this.transform.position, this.transform.rotation) as GameObject;
-            visualPortal.transform.localScale = this.transform.localScale;        
+            visualPortal.transform.localScale = this.transform.localScale;
         }
     }
 
@@ -44,7 +44,7 @@ public class PortalDoor : MonoBehaviour
         player.transform.position = targetWaypoint.transform.position;
     }
 
-    void OnCollisionEnter(Collision coll)
+    private void OnCollisionEnter(Collision coll)
     {
         if (!doorActivated)
         {
