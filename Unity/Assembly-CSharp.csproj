@@ -87,6 +87,7 @@
      <Compile Include="Assets\JMO Assets\Cartoon FX\Spawn System\CFX_SpawnSystem.cs" />
      <Compile Include="Assets\Scripts\ActivateDoorTrigger.cs" />
      <Compile Include="Assets\Scripts\CameraSizeController.cs" />
+     <Compile Include="Assets\Scripts\ChickenHandController.cs" />
      <Compile Include="Assets\Scripts\DoorTriggerBase.cs" />
      <Compile Include="Assets\Scripts\DoubleTriggerDoorRemover.cs" />
      <Compile Include="Assets\Scripts\EggController.cs" />
