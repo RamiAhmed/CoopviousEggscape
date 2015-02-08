@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\EggController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SHader\tryingopacity.shader">
     <Files>
       <File FileName="Assets\Scripts\EggController.cs" Line="46" Column="1" />
+      <File FileName="Assets\SHader\billBOARD.shader" Line="1" Column="1" />
+      <File FileName="Assets\SHader\tryingopacity.shader" Line="28" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

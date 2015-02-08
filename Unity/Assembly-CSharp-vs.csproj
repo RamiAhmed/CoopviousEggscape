@@ -94,12 +94,15 @@
      <Compile Include="Assets\Scripts\InputReceiver.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PortalDoor.cs" />
+     <Compile Include="Assets\Scripts\Portals.cs" />
      <Compile Include="Assets\Scripts\PressurePlateDoorOpener.cs" />
      <Compile Include="Assets\Scripts\RemoveDoorTrigger.cs" />
      <Compile Include="Assets\Scripts\RollingForwardLooping.cs" />
      <Compile Include="Assets\Scripts\SoundPlayerBase.cs" />
+     <Compile Include="Assets\tryingshaderopacity.cs" />
      <None Include="Assets\JMO Assets\Cartoon FX\Shaders (Mobile)\CFXM_MobileParticleAdd_Alpha8.shader" />
      <None Include="Assets\SHader\billBOARD.shader" />
+     <None Include="Assets\SHader\tryingopacity.shader" />
      <None Include="Assets\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
      <None Include="Assets\JMO Assets\!JMO Assets Readme.txt" />
      <None Include="Assets\Exploder\Exploder\3rd\P2T.txt" />
