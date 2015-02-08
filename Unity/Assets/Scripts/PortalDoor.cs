@@ -34,7 +34,7 @@ public class PortalDoor : MonoBehaviour
 
             this.renderer.enabled = false;
 
-            var visualPortal = Instantiate(portalPrefab, portalLocationWaypoint.transform.position, this.transform.rotation) as GameObject;
+            Instantiate(portalPrefab, portalLocationWaypoint.transform.position, this.transform.rotation);
         }
     }
 
