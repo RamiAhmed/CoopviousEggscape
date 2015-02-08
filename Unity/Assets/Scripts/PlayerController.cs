@@ -24,6 +24,7 @@ public class PlayerController : SoundPlayerBase
     private float _lastAttack;
     private Animator _animator;
     private ParticleSystem _featherParticles;
+    private GameController _gameController;
 
     private float _lastDisabledControls;
 
@@ -75,6 +76,12 @@ public class PlayerController : SoundPlayerBase
         if (_featherParticles == null)
         {
             Debug.LogError(this.gameObject.name + " is missing its feather particle system");
+        }
+
+        _gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+        if (_gameController == null)
+        {
+            Debug.LogError(this.gameObject.name + " could not find the GameController game object with its GameController component");
         }
     }
 
@@ -190,5 +197,10 @@ public class PlayerController : SoundPlayerBase
         _featherParticles.Play();
 
         // TODO: Set other egg properties
+    }
+
+    public void FadeToBlack()
+    {
+        _gameController.FadeToBlack(0.6f, 0.6f);
     }
 }

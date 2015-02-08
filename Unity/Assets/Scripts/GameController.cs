@@ -11,12 +11,20 @@ public class GameController : MonoBehaviour
     public Canvas UI;
     public AudioClip mainMusic;
 
+    private FadeToBlack _fader;
+
     private AudioSource _audioPlayer;
 
     private GameState _gameState = GameState.MENU;
 
     private void Start()
     {
+        _fader = this.GetComponent<FadeToBlack>();
+        if (_fader == null)
+        {
+            Debug.LogError(this.gameObject.name + " is missing its FadeToBlack component for fading the screen to black");
+        }
+
         _audioPlayer = this.GetComponent<AudioSource>();
         if (_audioPlayer == null)
         {
@@ -42,5 +50,10 @@ public class GameController : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void FadeToBlack(float fadeInTime, float fadeOutTime)
+    {
+        _fader.StartFade(fadeOutTime, fadeInTime, Color.black);
     }
 }

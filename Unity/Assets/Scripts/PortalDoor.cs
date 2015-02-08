@@ -41,6 +41,8 @@ public class PortalDoor : MonoBehaviour
             return;
         }
 
+        player.GetComponent<PlayerController>().FadeToBlack();
+
         player.transform.position = targetWaypoint.transform.position;
     }
 
