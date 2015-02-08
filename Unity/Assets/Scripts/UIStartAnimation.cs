@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class UIStartAnimation : MonoBehaviour
 {
-    public float Speed = -2.3f;
+    public float Speed = 2.3f;
 
     private Animator _animator;
     private Rigidbody _rigidbody;
@@ -26,7 +26,7 @@ public class UIStartAnimation : MonoBehaviour
 
     private void Phase1()
     {
-        _rigidbody.velocity = new Vector3(Speed, 0, 0);
+        _rigidbody.velocity = new Vector3(Speed * -1f, 0, 0);
         _animator.SetBool("Walking", true);
     }
 
@@ -41,14 +41,14 @@ public class UIStartAnimation : MonoBehaviour
     private void Phase3()
     {
         transform.eulerAngles = new Vector3(0f, 90f, 90f);
-        _rigidbody.velocity = new Vector3(Speed * -1f, 0, 0);
+        _rigidbody.velocity = new Vector3(Speed, 0, 0);
         _animator.SetBool("Walking", true);
     }
 
     private void Phase4()
     {
         transform.eulerAngles = new Vector3(0f, 270f, -85f);
-        _rigidbody.velocity = new Vector3(Speed, 0, 0);
+        _rigidbody.velocity = new Vector3(Speed * -1f, 0, 0);
     }
 
     private void Phase5()
