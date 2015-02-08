@@ -26,15 +26,20 @@ public abstract class SoundPlayerBase : MonoBehaviour
         }
     }
 
-    protected virtual void PlayRandomSound(AudioSource player, AudioClip[] audioClips, bool playOneShot=false)
+    protected virtual void PlayRandomSound(AudioSource audioPlayer, AudioClip[] audioClips, bool playOneShot=false)
     {
-        if (player == null)
+        if (audioPlayer == null)
         {
             Debug.LogError(this.gameObject.name + " could not PlayRandomSound, as the AudioSource is null");
             return;
         }
 
-        if (player.isPlaying)
+        if (audioClips == null || audioClips.Length == 0)
+        {
+            Debug.LogError(this.gameObject.name + " could not PlayRandomSound, as the supplied audioClips is an empty array");
+        }
+
+        if (audioPlayer.isPlaying)
         {
             return;
         }
@@ -49,8 +54,8 @@ public abstract class SoundPlayerBase : MonoBehaviour
         
         if (!playOneShot)
         {
-            player.clip = audioClip;
-            player.Play();
+            audioPlayer.clip = audioClip;
+            audioPlayer.Play();
         }
         else
         {
