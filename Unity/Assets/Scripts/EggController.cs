@@ -5,9 +5,12 @@ public class EggController : SoundPlayerBase
 {
     public float eggMoveSpeed = 10f;
     public float eggMaxLifespan = 5f;
+    public float chanceForEggLeftovers = 0.25f;
 
     public AudioClip[] eggImpactSoundsDry;
     public AudioClip[] eggImpactSoundsWet;
+
+    public GameObject eggLeftoversGO;
 
     private float _eggLifespan;
     private bool _destroyed;
@@ -30,6 +33,11 @@ public class EggController : SoundPlayerBase
         if (_audioPlayer == null)
         {
             Debug.LogError(this.gameObject.name + " could not find its audio player");
+        }
+
+        if (eggLeftoversGO == null)
+        {
+            Debug.LogWarning(this.gameObject.name + " is missing a eggLeftoversPrefab reference");
         }
     }
 
@@ -54,10 +62,12 @@ public class EggController : SoundPlayerBase
         this.transform.rotation = Quaternion.Lerp(transform.rotation, Random.rotation, Time.fixedDeltaTime * 5f);
     }
 
-    public void Explode(bool bPlayWetSounds=false)
+    public void Explode(bool bPlayWetSounds = false)
     {
         if (!_destroyed)
         {
+            _destroyed = true;
+
             if (bPlayWetSounds)
             {
                 PlayRandomSound(eggImpactSoundsWet, true);
@@ -67,13 +77,17 @@ public class EggController : SoundPlayerBase
                 PlayRandomSound(eggImpactSoundsDry, true);
             }
 
-            _destroyed = true;
             this.tag = "Exploder";
             _exploder.Explode();
+
+            if (eggLeftoversGO != null && Random.value < chanceForEggLeftovers)
+            {
+                Instantiate(eggLeftoversGO, this.transform.position, Quaternion.identity);
+            }
         }
     }
 
-    void OnCollisionEnter(Collision coll)
+    private void OnCollisionEnter(Collision coll)
     {
         if (coll.transform.CompareTag("Wall") || coll.transform.CompareTag("Destructible"))
         {
