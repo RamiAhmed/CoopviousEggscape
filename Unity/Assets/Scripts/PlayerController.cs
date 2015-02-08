@@ -2,17 +2,17 @@
 
 public class PlayerController : SoundPlayerBase
 {
-    public float maxPlayerSpeed = 20f;
+    public float maxPlayerSpeed = 10f;
     public float minPlayerSpeed = 1f;
     public float playerAcceleration = 2f;
     public int playerNumber = 1;
     public float dragFactor = 2f;
-    public float playerRadius = 2f;
-    public float playerAttackConeInDegrees = 45;
-    public int maxAttacksPerSecond = 2;
+    public float playerRadius = 4f;
+    public float maxAttacksPerSecond = 2f;
     public float cameraEdgeFactor = 10f;
-    public float disabledControlsTimeOnAttack = 0.5f;
+    public float disabledControlsTimeOnAttack = 0.4f;
 
+    public GameObject chickenHand;
     public GameObject eggPrefab;
     public GameObject otherPlayer;
 
@@ -23,6 +23,8 @@ public class PlayerController : SoundPlayerBase
     private Vector3 _velocity;
     private float _lastAttack;
     private Animator _animator;
+    private ParticleSystem _featherParticles;
+    private GameController _gameController;
 
     private float _lastDisabledControls;
 
@@ -57,16 +59,35 @@ public class PlayerController : SoundPlayerBase
             Debug.LogError(this.gameObject.name + " is missing its otherPlayer reference!");
         }
 
+        if (chickenHand == null)
+        {
+            Debug.LogError(this.gameObject.name + " is missing its chicken hand prefab");
+        }
+
+        chickenHand.SetActive(false);
+
         _animator = this.GetComponent<Animator>();
         if (_animator == null)
         {
             Debug.LogError(this.gameObject.name + " is missing its Animator component");
         }
+
+        _featherParticles = this.GetComponentInChildren<ParticleSystem>();
+        if (_featherParticles == null)
+        {
+            Debug.LogError(this.gameObject.name + " is missing its feather particle system");
+        }
+
+        _gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+        if (_gameController == null)
+        {
+            Debug.LogError(this.gameObject.name + " could not find the GameController game object with its GameController component");
+        }
     }
 
     private void Update()
     {
-        _animator.SetBool("walking", _velocity.sqrMagnitude > minPlayerSpeed);
+        _animator.SetBool("Walking", _velocity.sqrMagnitude > minPlayerSpeed);
 
         float currentTime = Time.time;
         if (currentTime - _lastDisabledControls > disabledControlsTimeOnAttack)
@@ -126,6 +147,9 @@ public class PlayerController : SoundPlayerBase
 
         _lastAttack = currentTime;
 
+        chickenHand.SetActive(true);
+        Invoke("HideChickenHand", 0.4f);
+
         // TODO: Try to figure out how to vibrate the controller ?
         Debug.Log("Player " + playerNumber + " Attack!");
 
@@ -147,6 +171,11 @@ public class PlayerController : SoundPlayerBase
         }
     }
 
+    private void HideChickenHand()
+    {
+        chickenHand.SetActive(false);
+    }
+
     public void MakeEgg(Vector3 position, Vector3 direction)
     {
         PlayRandomSound(attackSoundsScream);
@@ -163,6 +192,15 @@ public class PlayerController : SoundPlayerBase
         disabledControls = true;
         _lastDisabledControls = Time.time;
 
+        _animator.SetTrigger("Hit");
+
+        _featherParticles.Play();
+
         // TODO: Set other egg properties
+    }
+
+    public void FadeToBlack()
+    {
+        _gameController.FadeToBlack(0.6f, 0.6f);
     }
 }

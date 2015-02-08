@@ -29,7 +29,7 @@ public class PortalDoor : MonoBehaviour
             this.renderer.enabled = false;
 
             var visualPortal = Instantiate(portalPrefab, this.transform.position, this.transform.rotation) as GameObject;
-            visualPortal.transform.localScale = this.transform.localScale;
+            //visualPortal.transform.localScale = this.transform.localScale;
         }
     }
 
@@ -40,6 +40,8 @@ public class PortalDoor : MonoBehaviour
             Debug.LogError("Could not teleport player, player is null");
             return;
         }
+
+        player.GetComponent<PlayerController>().FadeToBlack();
 
         player.transform.position = targetWaypoint.transform.position;
     }

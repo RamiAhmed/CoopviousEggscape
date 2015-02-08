@@ -1,12 +1,11 @@
 fileFormatVersion: 2
-guid: b909bb27e345e7e408f5f56ed9d28aa6
+guid: e4ab6250572b049a684d77e3ef37efa9
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: kyllinge2_arm
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
