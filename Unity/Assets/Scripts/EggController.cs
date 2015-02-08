@@ -85,5 +85,18 @@ public class EggController : SoundPlayerBase
                 Destroy(coll.gameObject, 3f);
             }
         }
+        else if (coll.transform.CompareTag("Turtle") || coll.transform.root.CompareTag("Turtle"))
+        {
+            Explode();
+
+            var turtleController = coll.transform.GetComponent<TurtleController>();
+            if (turtleController == null)
+            {
+                Debug.LogError(this.gameObject.name + " could not find the TurtleController component on the colliding object: " + coll);
+                return;
+            }
+
+            turtleController.Die();
+        }
     }
 }

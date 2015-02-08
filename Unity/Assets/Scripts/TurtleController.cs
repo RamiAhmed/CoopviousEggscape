@@ -37,7 +37,6 @@ public class TurtleController : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         var otherRoot = other.transform.root;
-        Debug.Log(this.gameObject.name + " colliding with otherRoot: " + otherRoot);
 
         if (!otherRoot.CompareTag("Player"))
         {
@@ -52,7 +51,6 @@ public class TurtleController : MonoBehaviour
         }
 
         Die();
-
         playerController.playerLives -= 1;
     }
 }
