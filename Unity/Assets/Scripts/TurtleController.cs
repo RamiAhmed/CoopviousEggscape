@@ -65,5 +65,6 @@ public class TurtleController : SoundPlayerBase
 
         Die();
         playerController.playerLives -= 1;
+        playerController.MakeEgg(transform.position, (transform.position - playerController.transform.position).normalized);
     }
 }

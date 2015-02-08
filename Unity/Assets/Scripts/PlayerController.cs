@@ -126,11 +126,11 @@ public class PlayerController : SoundPlayerBase
             Debug.LogError(this.gameObject.name + " could not identify the main/current camera");
         }
 
-        _screenShaker = _camera.GetComponent<ScreenShaker>();
-        if (_screenShaker == null)
-        {
-            Debug.LogWarning(this.gameObject.name + " could not find the ScreenShaker component on the camera");
-        }
+//        _screenShaker = _camera.GetComponent<ScreenShaker>();
+//        if (_screenShaker == null)
+//        {
+//            Debug.LogWarning(this.gameObject.name + " could not find the ScreenShaker component on the camera");
+//        }
 
         if (playerLifeIcon == null)
         {
