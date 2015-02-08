@@ -15,6 +15,8 @@ public class PlayerController : SoundPlayerBase
     public float chickenHandVisibleTime = 0.4f;
     public float screenShakeChanceOnHit = 0.05f;
 
+    public Animator attackAnimator;
+
     public GameObject chickenHand;
     public GameObject eggPrefab;
     public GameObject otherPlayer;
@@ -32,6 +34,7 @@ public class PlayerController : SoundPlayerBase
     private GameController _gameController;
     private Camera _camera;
     private ScreenShaker _screenShaker;
+    //private Animator _attackAnimator;
 
     private float _lastDisabledControls;
 
@@ -102,6 +105,12 @@ public class PlayerController : SoundPlayerBase
         if (_animator == null)
         {
             Debug.LogError(this.gameObject.name + " is missing its Animator component");
+        }
+
+        //_attackAnimator = this.GetComponentInChildren<Animator>();
+        if (attackAnimator == null)
+        {
+            Debug.LogError(this.gameObject.name + " is missing an animator for its attack animations");
         }
 
         _particleSystems = this.GetComponentsInChildren<ParticleSystem>();
@@ -205,6 +214,7 @@ public class PlayerController : SoundPlayerBase
 
         chickenHand.SetActive(true);
         Invoke("HideChickenHand", chickenHandVisibleTime);
+        attackAnimator.SetTrigger("Uppercut");
 
         // TODO: Try to figure out how to vibrate the controller ?
         Debug.Log("Player " + playerNumber + " Attack!");
