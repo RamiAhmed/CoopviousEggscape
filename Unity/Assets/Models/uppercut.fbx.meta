@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1cf9df298e17d462fb0b12df8ef0f31b
+guid: 4b30e19d782e3c44ca5c165cdb91613f
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -8,7 +8,7 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: upprcort
-    7400000: Take 001
+    7400000: Uppercut
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -17,7 +17,7 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    optimizeGameObjects: 0
+    optimizeGameObjects: 1
     motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
@@ -25,11 +25,39 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Uppercut
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: .5
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

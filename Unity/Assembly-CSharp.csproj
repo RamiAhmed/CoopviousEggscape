@@ -99,9 +99,7 @@
      <Compile Include="Assets\Scripts\Portals.cs" />
      <Compile Include="Assets\Scripts\PressurePlateDoorOpener.cs" />
      <Compile Include="Assets\Scripts\RemoveDoorTrigger.cs" />
-     <Compile Include="Assets\Scripts\RemoveSelfAfterDelay.cs" />
      <Compile Include="Assets\Scripts\RollingForwardLooping.cs" />
-     <Compile Include="Assets\Scripts\ScreenShaker.cs" />
      <Compile Include="Assets\Scripts\SoundPlayerBase.cs" />
      <Compile Include="Assets\Scripts\TurtleController.cs" />
      <Compile Include="Assets\Scripts\TurtleManager.cs" />
