@@ -53,7 +53,7 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    optimizeGameObjects: 0
+    optimizeGameObjects: 1
     motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
@@ -61,14 +61,76 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|ArmatureAction
+      takeName: Armature|ArmatureAction
+      firstFrame: 0
+      lastFrame: 94
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|Root
+        weight: 1
+      - path: Armature/Armature|Root/Armature|Bone
+        weight: 1
+      - path: Armature/Armature|Root/Armature|Bone/Armature|Bone_L
+        weight: 1
+      - path: Armature/Armature|Root/Armature|Bone/Armature|Bone_L/Armature|Bone_L.001
+        weight: 1
+      - path: Armature/Armature|Root/Armature|Bone/Armature|Bone_R
+        weight: 1
+      - path: Armature/Armature|Root/Armature|Bone/Armature|Bone_R/Armature|Bone_R.001
+        weight: 1
+      - path: Armature/Armature|Root/Armature|Bone/Armature|Bone.001
+        weight: 1
+      - path: Armature/Armature|Root/Armature|Bone/Armature|Bone.001/Armature|Bone.002
+        weight: 1
+      - path: Armature/Armature|Root/Armature|Bone/Armature|Bone.001/Armature|Bone.002/Armature|Bone.003
+        weight: 1
+      - path: Armature/Armature|Root/Armature|Bone/Armature|Bone.001/Armature|Bone.002/Armature|Bone.004
+        weight: 1
+      - path: Armature/Armature|Root/Armature|Bone/Armature|Bone_L.002
+        weight: 1
+      - path: Armature/Armature|Root/Armature|Bone/Armature|Bone_L.002/Armature|Bone_L.003
+        weight: 1
+      - path: Armature/Armature|Root/Armature|Bone/Armature|Bone_R.002
+        weight: 1
+      - path: Armature/Armature|Root/Armature|Bone/Armature|Bone_R.002/Armature|Bone_R.003
+        weight: 1
+      - path: pSphere4 pSphere6
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 10
     meshCompression: 0
     addColliders: 0
-    importBlendShapes: 1
+    importBlendShapes: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -95,7 +157,7 @@ ModelImporter:
     armStretch: .0500000007
     legStretch: .0500000007
     feetSpacing: 0
-    rootMotionBoneName: 
+    rootMotionBoneName: Armature|Root
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   additionalBone: 0

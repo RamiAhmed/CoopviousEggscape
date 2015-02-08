@@ -9,13 +9,17 @@ public class GameController : MonoBehaviour
     }
 
     public Canvas UI;
-    public AudioClip mainMusic;
 
     private FadeToBlack _fader;
 
     private AudioSource _audioPlayer;
 
     private GameState _gameState = GameState.MENU;
+
+    public GameState gameState
+    {
+        get { return _gameState; }
+    }
 
     private void Start()
     {
@@ -55,5 +59,15 @@ public class GameController : MonoBehaviour
     public void FadeToBlack(float fadeInTime, float fadeOutTime)
     {
         _fader.StartFade(fadeOutTime, fadeInTime, Color.black);
+    }
+
+    public void LoseGame()
+    {
+        Invoke("Restart", 1f);
+    }
+
+    private void Restart()
+    {
+        Application.LoadLevel(Application.loadedLevel);
     }
 }

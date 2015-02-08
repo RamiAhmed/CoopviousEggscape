@@ -11,14 +11,16 @@ public class PlayerController : SoundPlayerBase
     public float maxAttacksPerSecond = 2f;
     public float cameraEdgeFactor = 10f;
     public float disabledControlsTimeOnAttack = 0.4f;
+    public int playerLives = 3;
+    public float chickenHandVisibleTime = 0.4f;
 
     public GameObject chickenHand;
     public GameObject eggPrefab;
     public GameObject otherPlayer;
 
-	public AudioClip[] attackSoundsImpact;
-	public AudioClip[] attackSoundsScream;
-	public AudioClip[] attackSoundsMiss;
+    public AudioClip[] attackSoundsImpact;
+    public AudioClip[] attackSoundsScream;
+    public AudioClip[] attackSoundsMiss;
 
     private Vector3 _velocity;
     private float _lastAttack;
@@ -87,6 +89,11 @@ public class PlayerController : SoundPlayerBase
 
     private void Update()
     {
+        if (_gameController.gameState == GameController.GameState.MENU)
+        {
+            return;
+        }
+
         _animator.SetBool("Walking", _velocity.sqrMagnitude > minPlayerSpeed);
 
         float currentTime = Time.time;
@@ -98,6 +105,11 @@ public class PlayerController : SoundPlayerBase
 
     private void FixedUpdate()
     {
+        if (_gameController.gameState == GameController.GameState.MENU)
+        {
+            return;
+        }
+
         if (!this.rigidbody.isKinematic)
         {
             this.rigidbody.velocity = this.rigidbody.angularVelocity = Vector3.zero;
@@ -118,7 +130,7 @@ public class PlayerController : SoundPlayerBase
 
             _velocity -= speed * dragFactor;
             this.rigidbody.MovePosition(selfPos + speed);
-			this.transform.LookAt(selfPos + speed);
+            this.transform.LookAt(selfPos + speed);
         }
     }
 
@@ -148,7 +160,7 @@ public class PlayerController : SoundPlayerBase
         _lastAttack = currentTime;
 
         chickenHand.SetActive(true);
-        Invoke("HideChickenHand", 0.4f);
+        Invoke("HideChickenHand", chickenHandVisibleTime);
 
         // TODO: Try to figure out how to vibrate the controller ?
         Debug.Log("Player " + playerNumber + " Attack!");
@@ -195,12 +207,35 @@ public class PlayerController : SoundPlayerBase
         _animator.SetTrigger("Hit");
 
         _featherParticles.Play();
-
-        // TODO: Set other egg properties
     }
 
     public void FadeToBlack()
     {
         _gameController.FadeToBlack(0.6f, 0.6f);
     }
+
+    //private void OnCollisionEnter(Collision other)
+    //{
+    //    var otherRoot = other.transform.root;
+    //    Debug.Log(this.gameObject.name + " colliding with otherRoot: " + otherRoot);
+
+    //    if (!otherRoot.CompareTag("Turtle"))
+    //    {
+    //        return;
+    //    }
+
+    //    var turtleController = otherRoot.GetComponent<TurtleController>();
+    //    if (turtleController == null)
+    //    {
+    //        Debug.LogError(this.gameObject.name + " OnCollisionEnter - colliding turtle does not have a TurtleController component");
+    //        return;
+    //    }
+
+    //    turtleController.Die();
+
+    //    if (--playerLives < 0)
+    //    {
+    //        _gameController.LoseGame();
+    //    }
+    //}
 }
