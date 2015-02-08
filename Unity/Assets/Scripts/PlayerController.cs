@@ -259,6 +259,14 @@ public class PlayerController : SoundPlayerBase
 
     public void Hit()
     {
+        float currentTime = Time.time;
+        if ((currentTime - _lastHit) < (1f / (float)maxAttacksPerSecond))
+        {
+            return;
+        }
+
+        _lastHit = currentTime;
+
         Vector3 otherPlayerPos = otherPlayer.transform.position;
         Vector3 selfPos = this.transform.position;
         Vector3 eggDirection = (otherPlayerPos - selfPos).normalized;
@@ -270,7 +278,7 @@ public class PlayerController : SoundPlayerBase
 
     public void Miss()
     {
-        _lastHit = Time.time;
+        
         PlayRandomSound(attackSoundsMiss);
     }
 

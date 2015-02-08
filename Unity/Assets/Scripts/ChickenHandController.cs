@@ -15,7 +15,7 @@ public class ChickenHandController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (!other.transform.root.CompareTag("Player"))
+        if (!other.transform.CompareTag("ChickenBody"))
         {
             return;
         }
