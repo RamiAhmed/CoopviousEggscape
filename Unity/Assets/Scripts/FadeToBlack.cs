@@ -4,7 +4,6 @@ using UnityEngine;
 public class FadeToBlack : MonoBehaviour
 {
     private Material _fadeMaterial = null;
-    private bool _fading = false;
 
     private void Start()
     {
@@ -43,13 +42,10 @@ public class FadeToBlack : MonoBehaviour
             t = Mathf.Clamp01(t - Time.deltaTime / aFadeInTime);
             DrawQuad(aColor, t);
         }
-
-        _fading = false;
     }
 
     public void StartFade(float aFadeOutTime, float aFadeInTime, Color aColor)
     {
-        _fading = true;
         StartCoroutine(Fade(aFadeOutTime, aFadeInTime, aColor));
     }
 }
