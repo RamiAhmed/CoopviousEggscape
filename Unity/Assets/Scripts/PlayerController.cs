@@ -15,6 +15,8 @@ public class PlayerController : SoundPlayerBase
     public float chickenHandVisibleTime = 0.4f;
     public float screenShakeChanceOnHit = 0.05f;
     public Texture2D playerLifeIcon;
+    public float playerLifeIconWidth = 100f;
+    public float playerLifeIconHeight = 50f;
     public TurtleManager _turtleManager;
 
     public GameObject chickenHand;
@@ -196,9 +198,9 @@ public class PlayerController : SoundPlayerBase
         {
             return;
         }
-        
-        float iconWidth = 75f;
-        float iconHeight = 40f;
+
+        float iconWidth = playerLifeIconWidth;
+        float iconHeight = playerLifeIconHeight;
 
         if (this.playerNumber == 0)
         {
