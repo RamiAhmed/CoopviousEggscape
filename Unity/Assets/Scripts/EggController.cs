@@ -82,7 +82,8 @@ public class EggController : SoundPlayerBase
 
             if (eggLeftoversGO != null && Random.value < chanceForEggLeftovers)
             {
-                Instantiate(eggLeftoversGO, this.transform.position, Quaternion.identity);
+                Vector3 pos = this.transform.position + new Vector3(0f, 0.5f, 0f);
+                Instantiate(eggLeftoversGO, pos, Quaternion.identity);
             }
         }
     }

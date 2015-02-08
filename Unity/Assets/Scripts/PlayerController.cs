@@ -24,10 +24,11 @@ public class PlayerController : SoundPlayerBase
     public AudioClip[] attackSoundsMiss;
     public AudioClip[] lifeLostSounds;
 
+    private ParticleSystem[] _particleSystems;
+
     private Vector3 _velocity;
     private float _lastAttack;
-    private Animator _animator;
-    private ParticleSystem _featherParticles;
+    private Animator _animator;    
     private GameController _gameController;
     private Camera _camera;
     private ScreenShaker _screenShaker;
@@ -103,10 +104,10 @@ public class PlayerController : SoundPlayerBase
             Debug.LogError(this.gameObject.name + " is missing its Animator component");
         }
 
-        _featherParticles = this.GetComponentInChildren<ParticleSystem>();
-        if (_featherParticles == null)
+        _particleSystems = this.GetComponentsInChildren<ParticleSystem>();
+        if (_particleSystems == null || _particleSystems.Length == 0)
         {
-            Debug.LogError(this.gameObject.name + " is missing its feather particle system");
+            Debug.LogWarning(this.gameObject.name + " has no registered Particle Systems attached");
         }
 
         _gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
@@ -249,7 +250,10 @@ public class PlayerController : SoundPlayerBase
 
         _animator.SetTrigger("Hit");
 
-        _featherParticles.Play();
+        foreach (var ps in _particleSystems)
+        {
+            ps.Play();
+        }
 
         if (_screenShaker != null && Random.value < screenShakeChanceOnHit)
         {
