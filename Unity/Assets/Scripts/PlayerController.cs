@@ -224,6 +224,9 @@ public class PlayerController : SoundPlayerBase
             }
             GUI.EndGroup();
         }
+
+        float boxWidth = 100f, boxHeight = 25f;
+        GUI.Box(new Rect(Screen.width/2f - boxWidth/2f, 5f, boxWidth, boxHeight), "Killed Turtles: " + GameCounter.killedTurtles);
     }
 
     public void Move(float deltaX, float deltaY)

@@ -67,6 +67,11 @@ public class GameController : MonoBehaviour
                     _lastGameStateChange = currentTime;
                 }
             }
+
+            if (Input.GetKeyDown(KeyCode.F12))
+            {
+                Restart();
+            }
         }
     }
 
