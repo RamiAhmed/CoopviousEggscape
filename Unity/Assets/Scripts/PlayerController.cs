@@ -11,7 +11,7 @@ public class PlayerController : SoundPlayerBase
     public float maxAttacksPerSecond = 2f;
     public float cameraEdgeFactor = 10f;
     public float disabledControlsTimeOnAttack = 0.4f;
-    public int playerLives = 3;
+    public int playerStartLives = 3;
     public float chickenHandVisibleTime = 0.4f;
 
     public GameObject chickenHand;
@@ -29,6 +29,26 @@ public class PlayerController : SoundPlayerBase
     private GameController _gameController;
 
     private float _lastDisabledControls;
+
+    private int _playerLives;
+
+    public int playerLives
+    {
+        get
+        {
+            return _playerLives;
+        }
+        set
+        {
+            _playerLives = value;
+            if (_playerLives < 0)
+            {
+                _gameController.LoseGame();
+            }
+
+            Debug.Log(this.gameObject.name + " lives left: " + _playerLives);
+        }
+    }
 
     public bool disabledControls
     {
@@ -85,6 +105,8 @@ public class PlayerController : SoundPlayerBase
         {
             Debug.LogError(this.gameObject.name + " could not find the GameController game object with its GameController component");
         }
+
+        _playerLives = playerStartLives;
     }
 
     private void Update()
@@ -213,29 +235,4 @@ public class PlayerController : SoundPlayerBase
     {
         _gameController.FadeToBlack(0.6f, 0.6f);
     }
-
-    //private void OnCollisionEnter(Collision other)
-    //{
-    //    var otherRoot = other.transform.root;
-    //    Debug.Log(this.gameObject.name + " colliding with otherRoot: " + otherRoot);
-
-    //    if (!otherRoot.CompareTag("Turtle"))
-    //    {
-    //        return;
-    //    }
-
-    //    var turtleController = otherRoot.GetComponent<TurtleController>();
-    //    if (turtleController == null)
-    //    {
-    //        Debug.LogError(this.gameObject.name + " OnCollisionEnter - colliding turtle does not have a TurtleController component");
-    //        return;
-    //    }
-
-    //    turtleController.Die();
-
-    //    if (--playerLives < 0)
-    //    {
-    //        _gameController.LoseGame();
-    //    }
-    //}
 }

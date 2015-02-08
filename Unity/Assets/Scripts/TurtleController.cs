@@ -53,10 +53,6 @@ public class TurtleController : MonoBehaviour
 
         Die();
 
-        if (--playerController.playerLives < 0)
-        {
-            var gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
-            gameController.LoseGame();
-        }
+        playerController.playerLives -= 1;
     }
 }
