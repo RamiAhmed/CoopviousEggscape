@@ -4,6 +4,7 @@ public class PortalDoor : MonoBehaviour
 {
     public GameObject targetWaypoint;
     public GameObject portalPrefab;
+    public GameObject portalLocationWaypoint;
 
     public bool doorActivated
     {
@@ -18,6 +19,11 @@ public class PortalDoor : MonoBehaviour
         {
             Debug.LogError(this.gameObject.name + " could not find its target waypoint");
         }
+
+        if (portalLocationWaypoint == null)
+        {
+            Debug.LogError(this.gameObject.name + " could not find its portalLocationWaypoint");
+        }
     }
 
     public void ActivateDoor()
@@ -28,8 +34,7 @@ public class PortalDoor : MonoBehaviour
 
             this.renderer.enabled = false;
 
-            var visualPortal = Instantiate(portalPrefab, this.transform.position, this.transform.rotation) as GameObject;
-            //visualPortal.transform.localScale = this.transform.localScale;
+            Instantiate(portalPrefab, portalLocationWaypoint.transform.position, this.transform.rotation);
         }
     }
 
