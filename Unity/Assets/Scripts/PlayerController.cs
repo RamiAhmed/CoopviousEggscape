@@ -14,6 +14,8 @@ public class PlayerController : SoundPlayerBase
     public int playerStartLives = 3;
     public float chickenHandVisibleTime = 0.4f;
     public float screenShakeChanceOnHit = 0.05f;
+    public Texture2D playerLifeIcon;
+    public TurtleManager _turtleManager;
 
     public GameObject chickenHand;
     public GameObject eggPrefab;
@@ -28,7 +30,7 @@ public class PlayerController : SoundPlayerBase
 
     private Vector3 _velocity;
     private float _lastAttack;
-    private Animator _animator;    
+    private Animator _animator;
     private GameController _gameController;
     private Camera _camera;
     private ScreenShaker _screenShaker;
@@ -128,6 +130,16 @@ public class PlayerController : SoundPlayerBase
             Debug.LogWarning(this.gameObject.name + " could not find the ScreenShaker component on the camera");
         }
 
+        if (playerLifeIcon == null)
+        {
+            Debug.LogError(this.gameObject.name + " is missing its playerLifeIcon");
+        }
+
+        if (_turtleManager == null)
+        {
+            Debug.LogError(this.gameObject.name + " is missing a reference to the TurtleManager (TurtleArea)");
+        }
+
         _playerLives = playerStartLives;
     }
 
@@ -175,6 +187,38 @@ public class PlayerController : SoundPlayerBase
             _velocity -= speed * dragFactor;
             this.rigidbody.MovePosition(selfPos + speed);
             this.transform.LookAt(selfPos + speed);
+        }
+    }
+
+    private void OnGUI()
+    {
+        if (!_turtleManager.activated)
+        {
+            return;
+        }
+        
+        float iconWidth = 75f;
+        float iconHeight = 40f;
+
+        if (this.playerNumber == 0)
+        {
+            GUI.BeginGroup(new Rect(5f, 5f, (Screen.width / 2f) - 5f, 50f));
+            for (int i = 0; i < _playerLives; i++)
+            {
+                float x = i * (iconWidth + 5f);
+                GUI.DrawTexture(new Rect(x, 0f, iconWidth, iconHeight), playerLifeIcon);
+            }
+            GUI.EndGroup();
+        }
+        else
+        {
+            GUI.BeginGroup(new Rect((Screen.width / 2f)  + 5f, 5f, (Screen.width / 2f) - 10f, 50f));
+            for (int i = 0; i < _playerLives; i++)
+            {
+                float x = (Screen.width / 2f) - ((i+1) * (iconWidth + 5f));
+                GUI.DrawTexture(new Rect(x, 0f, iconWidth, iconHeight), playerLifeIcon);
+            }
+            GUI.EndGroup();
         }
     }
 
