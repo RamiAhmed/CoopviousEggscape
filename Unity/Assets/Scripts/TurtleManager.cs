@@ -71,7 +71,7 @@ public class TurtleManager : MonoBehaviour
             return;
         }
 
-        _currentSpawnIndex = _currentSpawnIndex + 1 > maxSpawnsPerSecond ? 0 : _currentSpawnIndex++;
+        _currentSpawnIndex = _currentSpawnIndex + 1 > maxTurtles ? 0 : _currentSpawnIndex++;
 
         int random = Random.Range(0, spawningWaypoints.Length);
         Vector3 spawnPos = spawningWaypoints[random].transform.position;
