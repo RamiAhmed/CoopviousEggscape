@@ -38,6 +38,8 @@ public class PlayerController : SoundPlayerBase
     private ScreenShaker _screenShaker;
 
     private float _lastDisabledControls;
+    private float _lastAttemptedAttack;
+    private float _lastHit;
 
     private int _playerLives;
 
@@ -126,11 +128,11 @@ public class PlayerController : SoundPlayerBase
             Debug.LogError(this.gameObject.name + " could not identify the main/current camera");
         }
 
-//        _screenShaker = _camera.GetComponent<ScreenShaker>();
-//        if (_screenShaker == null)
-//        {
-//            Debug.LogWarning(this.gameObject.name + " could not find the ScreenShaker component on the camera");
-//        }
+        //        _screenShaker = _camera.GetComponent<ScreenShaker>();
+        //        if (_screenShaker == null)
+        //        {
+        //            Debug.LogWarning(this.gameObject.name + " could not find the ScreenShaker component on the camera");
+        //        }
 
         if (playerLifeIcon == null)
         {
@@ -204,7 +206,7 @@ public class PlayerController : SoundPlayerBase
 
         if (this.playerNumber == 0)
         {
-            GUI.BeginGroup(new Rect(5f, 5f, (Screen.width / 2f) - 5f, 50f));
+            GUI.BeginGroup(new Rect(5f, 5f, (Screen.width / 2f) - 5f, iconHeight + 5f));
             for (int i = 0; i < _playerLives; i++)
             {
                 float x = i * (iconWidth + 5f);
@@ -214,14 +216,17 @@ public class PlayerController : SoundPlayerBase
         }
         else
         {
-            GUI.BeginGroup(new Rect((Screen.width / 2f)  + 5f, 5f, (Screen.width / 2f) - 10f, 50f));
+            GUI.BeginGroup(new Rect((Screen.width / 2f) + 5f, 5f, (Screen.width / 2f) - 10f, iconHeight + 5f));
             for (int i = 0; i < _playerLives; i++)
             {
-                float x = (Screen.width / 2f) - ((i+1) * (iconWidth + 5f));
+                float x = (Screen.width / 2f) - ((i + 1) * (iconWidth + 5f));
                 GUI.DrawTexture(new Rect(x, 0f, iconWidth, iconHeight), playerLifeIcon);
             }
             GUI.EndGroup();
         }
+
+        float boxWidth = 100f, boxHeight = 25f;
+        GUI.Box(new Rect(Screen.width/2f - boxWidth/2f, 5f, boxWidth, boxHeight), "Killed Turtles: " + GameCounter.killedTurtles);
     }
 
     public void Move(float deltaX, float deltaY)
@@ -252,25 +257,31 @@ public class PlayerController : SoundPlayerBase
         chickenHand.SetActive(true);
         Invoke("HideChickenHand", chickenHandVisibleTime);
 
-        // TODO: Try to figure out how to vibrate the controller ?
-        Debug.Log("Player " + playerNumber + " Attack!");
+        Miss();
+    }
+
+    public void Hit()
+    {
+        float currentTime = Time.time;
+        if ((currentTime - _lastHit) < (1f / (float)maxAttacksPerSecond))
+        {
+            return;
+        }
+
+        _lastHit = currentTime;
 
         Vector3 otherPlayerPos = otherPlayer.transform.position;
         Vector3 selfPos = this.transform.position;
+        Vector3 eggDirection = (otherPlayerPos - selfPos).normalized;
 
-        if ((otherPlayerPos - selfPos).sqrMagnitude < (playerRadius * playerRadius))
-        {
-            // other player within attack cone radius
-            Vector3 eggDirection = (otherPlayerPos - selfPos).normalized;
+        var otherPlayerController = otherPlayer.GetComponent<PlayerController>();
+        otherPlayerController.MakeEgg(otherPlayerPos, eggDirection);
+        PlayRandomSound(attackSoundsImpact);
+    }
 
-            var otherPlayerController = otherPlayer.GetComponent<PlayerController>();
-            otherPlayerController.MakeEgg(otherPlayerPos, eggDirection);
-            PlayRandomSound(attackSoundsImpact);
-        }
-        else
-        {
-            PlayRandomSound(attackSoundsMiss);
-        }
+    public void Miss()
+    {        
+        PlayRandomSound(attackSoundsMiss);
     }
 
     private void HideChickenHand()
