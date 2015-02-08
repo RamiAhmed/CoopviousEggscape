@@ -13,6 +13,7 @@ public class PlayerController : SoundPlayerBase
     public float disabledControlsTimeOnAttack = 0.4f;
     public int playerStartLives = 3;
     public float chickenHandVisibleTime = 0.4f;
+    public float screenShakeChanceOnHit = 0.05f;
 
     public GameObject chickenHand;
     public GameObject eggPrefab;
@@ -27,6 +28,8 @@ public class PlayerController : SoundPlayerBase
     private Animator _animator;
     private ParticleSystem _featherParticles;
     private GameController _gameController;
+    private Camera _camera;
+    private ScreenShaker _screenShaker;
 
     private float _lastDisabledControls;
 
@@ -104,6 +107,18 @@ public class PlayerController : SoundPlayerBase
         if (_gameController == null)
         {
             Debug.LogError(this.gameObject.name + " could not find the GameController game object with its GameController component");
+        }
+
+        _camera = Camera.main ?? Camera.current;
+        if (_camera == null)
+        {
+            Debug.LogError(this.gameObject.name + " could not identify the main/current camera");
+        }
+
+        _screenShaker = _camera.GetComponent<ScreenShaker>();
+        if (_screenShaker == null)
+        {
+            Debug.LogWarning(this.gameObject.name + " could not find the ScreenShaker component on the camera");
         }
 
         _playerLives = playerStartLives;
@@ -229,6 +244,11 @@ public class PlayerController : SoundPlayerBase
         _animator.SetTrigger("Hit");
 
         _featherParticles.Play();
+
+        if (_screenShaker != null && Random.value < screenShakeChanceOnHit)
+        {
+            _screenShaker.ShakeScreen(2);
+        }
     }
 
     public void FadeToBlack()
