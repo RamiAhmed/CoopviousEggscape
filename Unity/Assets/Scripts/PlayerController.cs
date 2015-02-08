@@ -206,7 +206,7 @@ public class PlayerController : SoundPlayerBase
 
         if (this.playerNumber == 0)
         {
-            GUI.BeginGroup(new Rect(5f, 5f, (Screen.width / 2f) - 5f, 50f));
+            GUI.BeginGroup(new Rect(5f, 5f, (Screen.width / 2f) - 5f, iconHeight + 5f));
             for (int i = 0; i < _playerLives; i++)
             {
                 float x = i * (iconWidth + 5f);
@@ -216,7 +216,7 @@ public class PlayerController : SoundPlayerBase
         }
         else
         {
-            GUI.BeginGroup(new Rect((Screen.width / 2f) + 5f, 5f, (Screen.width / 2f) - 10f, 50f));
+            GUI.BeginGroup(new Rect((Screen.width / 2f) + 5f, 5f, (Screen.width / 2f) - 10f, iconHeight + 5f));
             for (int i = 0; i < _playerLives; i++)
             {
                 float x = (Screen.width / 2f) - ((i + 1) * (iconWidth + 5f));
@@ -277,8 +277,7 @@ public class PlayerController : SoundPlayerBase
     }
 
     public void Miss()
-    {
-        
+    {        
         PlayRandomSound(attackSoundsMiss);
     }
 
