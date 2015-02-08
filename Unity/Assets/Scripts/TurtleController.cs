@@ -45,6 +45,8 @@ public class TurtleController : SoundPlayerBase
     {
         this.gameObject.SetActive(false);
         PlayRandomSound(turtleDeathSounds, true);
+
+        GameCounter.killedTurtles++;
     }
 
     private void OnCollisionEnter(Collision other)
