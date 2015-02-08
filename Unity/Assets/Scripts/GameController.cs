@@ -1,30 +1,46 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class GameController : MonoBehaviour {
+public class GameController : MonoBehaviour
+{
+    public enum GameState
+    {
+        MENU,
+        PLAY
+    }
 
-	public enum GameState {
-		MENU,
-		PLAY
-	}
-	public Canvas UI;
+    public Canvas UI;
+    public AudioClip mainMusic;
 
-	private GameState _gameState = GameState.MENU;
+    private AudioSource _audioPlayer;
 
-	void Start () {
-		
-	}
+    private GameState _gameState = GameState.MENU;
 
-	void Update () {
-	
-	}
+    private void Start()
+    {
+        _audioPlayer = this.GetComponent<AudioSource>();
+        if (_audioPlayer == null)
+        {
+            Debug.LogError(this.gameObject.name + " is missing its AudioSource for playing the main music");
+        }
+    }
 
-	public void StartGame() {
-		UI.gameObject.SetActive(false);
-		_gameState = GameState.PLAY;
-	}
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            _gameState = GameState.MENU;
+            UI.gameObject.SetActive(true);
+        }
+    }
 
-	public void QuitGame() {
-		Application.Quit();
-	}
+    public void StartGame()
+    {
+        UI.gameObject.SetActive(false);
+        _gameState = GameState.PLAY;
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
