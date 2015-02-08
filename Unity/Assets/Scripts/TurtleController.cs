@@ -1,13 +1,25 @@
 ﻿using UnityEngine;
 
-public class TurtleController : MonoBehaviour
+public class TurtleController : SoundPlayerBase
 {
+    public AudioClip[] turtleDeathSounds;
+
     public float movementSpeed = 2f;
 
     public GameObject targetPlayer
     {
         get;
         set;
+    }
+
+    protected override void Start()
+    {
+        base.Start();
+
+        if (turtleDeathSounds == null || turtleDeathSounds.Length == 0)
+        {
+            Debug.LogError(this.gameObject.name + " is missing some death sounds");
+        }
     }
 
     // Update is called once per frame
@@ -32,6 +44,7 @@ public class TurtleController : MonoBehaviour
     public void Die()
     {
         this.gameObject.SetActive(false);
+        PlayRandomSound(turtleDeathSounds, true);
     }
 
     private void OnCollisionEnter(Collision other)

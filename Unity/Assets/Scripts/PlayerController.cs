@@ -22,6 +22,7 @@ public class PlayerController : SoundPlayerBase
     public AudioClip[] attackSoundsImpact;
     public AudioClip[] attackSoundsScream;
     public AudioClip[] attackSoundsMiss;
+    public AudioClip[] lifeLostSounds;
 
     private Vector3 _velocity;
     private float _lastAttack;
@@ -43,6 +44,11 @@ public class PlayerController : SoundPlayerBase
         }
         set
         {
+            if (value < playerLives)
+            {
+                PlayRandomSound(lifeLostSounds);
+            }
+
             _playerLives = value;
             if (_playerLives < 0)
             {
