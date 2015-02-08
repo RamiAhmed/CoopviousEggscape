@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Exploder;
 
 public class UIStartAnimation : MonoBehaviour {
 
@@ -8,11 +9,13 @@ public class UIStartAnimation : MonoBehaviour {
 	private Animator _animator;
 	private Rigidbody _rigidbody;
 	private Quaternion _rotation;
+	private ExploderObject _exploder;
 
 	void Start () {
 		_animator = GetComponent<Animator>();
 		_rigidbody = rigidbody;
 		_rotation = transform.rotation;
+		_exploder = GetComponent<ExploderObject>();
 
 		Invoke("Phase1", 0f);
 		Invoke("Phase2", 2.4f);
@@ -48,5 +51,6 @@ public class UIStartAnimation : MonoBehaviour {
 		_rigidbody.velocity = Vector3.zero;
 		_animator.SetBool("Walking", false);
 		transform.eulerAngles = new Vector3(-85f, 180f, 0);
+		_exploder.Explode();
 	}
 }
