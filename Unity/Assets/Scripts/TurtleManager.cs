@@ -16,6 +16,11 @@ public class TurtleManager : MonoBehaviour
 
     private GameController _gameController;
 
+    public bool activated
+    {
+        get { return _activated; }
+    }
+
     // Use this for initialization
     private void Start()
     {
